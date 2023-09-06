@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UTStaticLib", "UTStaticLib2008.vcproj", "{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DebugMFCShared|Win32 = DebugMFCShared|Win32
+		DebugMFCShared|x64 = DebugMFCShared|x64
+		DebugMFCStatic|Win32 = DebugMFCStatic|Win32
+		DebugMFCStatic|x64 = DebugMFCStatic|x64
+		ReleaseMFCShared|Win32 = ReleaseMFCShared|Win32
+		ReleaseMFCShared|x64 = ReleaseMFCShared|x64
+		ReleaseMFCStatic|Win32 = ReleaseMFCStatic|Win32
+		ReleaseMFCStatic|x64 = ReleaseMFCStatic|x64
+		UnicodeDebugMFCShared|Win32 = UnicodeDebugMFCShared|Win32
+		UnicodeDebugMFCShared|x64 = UnicodeDebugMFCShared|x64
+		UnicodeDebugMFCStatic|Win32 = UnicodeDebugMFCStatic|Win32
+		UnicodeDebugMFCStatic|x64 = UnicodeDebugMFCStatic|x64
+		UnicodeReleaseMFCShared|Win32 = UnicodeReleaseMFCShared|Win32
+		UnicodeReleaseMFCShared|x64 = UnicodeReleaseMFCShared|x64
+		UnicodeReleaseMFCStatic|Win32 = UnicodeReleaseMFCStatic|Win32
+		UnicodeReleaseMFCStatic|x64 = UnicodeReleaseMFCStatic|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.DebugMFCShared|Win32.ActiveCfg = DebugMFCShared|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.DebugMFCShared|Win32.Build.0 = DebugMFCShared|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.DebugMFCShared|x64.ActiveCfg = DebugMFCShared|x64
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.DebugMFCShared|x64.Build.0 = DebugMFCShared|x64
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.DebugMFCStatic|Win32.ActiveCfg = DebugMFCStatic|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.DebugMFCStatic|Win32.Build.0 = DebugMFCStatic|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.DebugMFCStatic|x64.ActiveCfg = DebugMFCStatic|x64
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.DebugMFCStatic|x64.Build.0 = DebugMFCStatic|x64
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.ReleaseMFCShared|Win32.ActiveCfg = ReleaseMFCShared|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.ReleaseMFCShared|Win32.Build.0 = ReleaseMFCShared|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.ReleaseMFCShared|x64.ActiveCfg = ReleaseMFCShared|x64
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.ReleaseMFCShared|x64.Build.0 = ReleaseMFCShared|x64
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.ReleaseMFCStatic|Win32.ActiveCfg = ReleaseMFCStatic|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.ReleaseMFCStatic|Win32.Build.0 = ReleaseMFCStatic|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.ReleaseMFCStatic|x64.ActiveCfg = ReleaseMFCStatic|x64
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.ReleaseMFCStatic|x64.Build.0 = ReleaseMFCStatic|x64
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeDebugMFCShared|Win32.ActiveCfg = UnicodeDebugMFCShared|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeDebugMFCShared|Win32.Build.0 = UnicodeDebugMFCShared|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeDebugMFCShared|x64.ActiveCfg = UnicodeDebugMFCShared|x64
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeDebugMFCShared|x64.Build.0 = UnicodeDebugMFCShared|x64
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeDebugMFCStatic|Win32.ActiveCfg = UnicodeDebugMFCStatic|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeDebugMFCStatic|Win32.Build.0 = UnicodeDebugMFCStatic|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeDebugMFCStatic|x64.ActiveCfg = UnicodeDebugMFCStatic|x64
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeDebugMFCStatic|x64.Build.0 = UnicodeDebugMFCStatic|x64
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeReleaseMFCShared|Win32.ActiveCfg = UnicodeReleaseMFCShared|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeReleaseMFCShared|Win32.Build.0 = UnicodeReleaseMFCShared|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeReleaseMFCShared|x64.ActiveCfg = UnicodeReleaseMFCShared|x64
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeReleaseMFCShared|x64.Build.0 = UnicodeReleaseMFCShared|x64
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeReleaseMFCStatic|Win32.ActiveCfg = UnicodeReleaseMFCStatic|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeReleaseMFCStatic|Win32.Build.0 = UnicodeReleaseMFCStatic|Win32
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeReleaseMFCStatic|x64.ActiveCfg = UnicodeReleaseMFCStatic|x64
+		{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}.UnicodeReleaseMFCStatic|x64.Build.0 = UnicodeReleaseMFCStatic|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
