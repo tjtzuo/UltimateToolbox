@@ -3,17 +3,20 @@
 Thumbs.db
 
 #Ignore files built by Visual Studio
-Debug/
-Release/
+Debug*/
+Release*/
 
 # User-specific files
 *.suo
 *.user
 
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
 # Files built by Visual Studio
 *_i.c
 *_p.c
-*_h.h
+*_i.h
 *.ilk
 *.meta
 *.obj
@@ -31,7 +34,7 @@ Release/
 *.tmp
 *.tmp_proj
 *_wpftmp.csproj
-*.log
+#*.log
 *.tlog
 .builds
 *.pidb
@@ -46,6 +49,8 @@ ipch/
 *.idb
 *.opensdf
 *.sdf
+*.VC.db
+*.VC.VC.opendb
 *.cache
 
 # Backup & report files from converting an old project file
@@ -67,7 +72,6 @@ UpgradeLog*.htm
 *.vspscc
 *.vssscc
 
-archive/
-samples/
-
 *.chw
+*.bsc
+*.exp

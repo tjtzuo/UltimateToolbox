@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e4b5a354-0b72-4b30-bf2e-4a296f998cc3}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{c1b01938-4538-43de-a570-0cb530c552ab}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{4faadf9d-435b-421d-a4f4-bbdb16cf3bc0}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="JPEGSRC6\JCAPIMIN.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JCAPISTD.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JCCOEFCT.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JCCOLOR.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JCDCTMGR.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JCHUFF.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JCINIT.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JCMAINCT.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JCMARKER.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JCMASTER.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JCOMAPI.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JCPARAM.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JCPHUFF.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JCPREPCT.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JCSAMPLE.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JCTRANS.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDAPIMIN.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDAPISTD.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDATADST.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDATASRC.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDCOEFCT.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDCOLOR.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDDCTMGR.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDHUFF.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDINPUT.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDMAINCT.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDMARKER.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDMASTER.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDMERGE.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDPHUFF.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDPOSTCT.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDSAMPLE.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JDTRANS.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JERROR.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JFDCTFLT.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JFDCTFST.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JFDCTINT.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JIDCTFLT.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JIDCTFST.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JIDCTINT.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JIDCTRED.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JMEMMGR.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JMEMNOBS.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JQUANT1.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JQUANT2.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JPEGSRC6\JUTILS.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="jconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JMORECFG.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

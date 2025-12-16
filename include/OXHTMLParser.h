@@ -1,4 +1,4 @@
-// HTMLParser.h: interface for the COXHTMLParser class.
+ï»¿// HTMLParser.h: interface for the COXHTMLParser class.
 //
 //////////////////////////////////////////////////////////////////////
 // Version: 9.3
@@ -103,52 +103,52 @@ protected:
 
 public:
 
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out : 
 	// --- Returns : 
 	// --- Effect : Removes all childs object and release 
 	//              all memory allocated by the object
     virtual void Clear();
 
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out : 
 	// --- Returns : TRUE always.
 	// --- Effect : Initializes members of the class.
     virtual BOOL Initialize();
 
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out : 
 	// --- Returns : TRUE always.
 	// --- Effect : Do nothing, override it if you need it.
     virtual BOOL Cleanup();
 
-	// --- In  : pParent - pointer to an object to parse text from.
+	// --- InÂ  : pParent - pointer to an object to parse text from.
 	// --- Out : 
 	// --- Returns : pointer to an object of type COXParser::STRING on success,
 	//				 NULL otherwise.
 	// --- Effect : Parses text element.
     virtual COXParserObject* ParseText(COXParserElement* pParent);
 
-	// --- In  : pElement - pointer to an element to be added to.
+	// --- InÂ  : pElement - pointer to an element to be added to.
 	//			 pObject - pointer to an object to be added to the element
 	// --- Out : 
 	// --- Returns : 
 	// --- Effect : Adds object to the element.
     virtual void AddObjectToElement(COXParserElement* pElement, COXParserObject* pObject);
 
-	// --- In  : pElement - pointer to an object to parse attributes.
+	// --- InÂ  : pElement - pointer to an object to parse attributes.
 	// --- Out : 
 	// --- Returns : TRUE on success, FALSE otherwise.
 	// --- Effect : Parses attributes of an object.
     virtual BOOL ParseAttributes(COXParserElement* pElement);
 
-	// --- In  : pParent - the parent of the element whose tag is being parsed.
+	// --- InÂ  : pParent - the parent of the element whose tag is being parsed.
 	// --- Out : bEmptyTag - TRUE, if tag does not requiere end tag, like <BR>
 	// --- Returns : pointer to an new object on success, NULL otherwise.
 	// --- Effect : Parses start part of a tag.
     virtual COXParserElement* ParseStartTag(COXParserElement* pParent, BOOL& bEmptyTag);
 
-	// --- In  : pElement - unused.
+	// --- InÂ  : pElement - unused.
 	//			 strEndTag - text to be parsed as end tag
 	// --- Out : 
 	// --- Returns : TRUE on success, FALSE otherwise.
@@ -156,7 +156,7 @@ public:
     virtual BOOL ParseEndTag(COXParserElement* pElement, COXQuickString& strEndTag);
 
 	
-	// --- In  : szCurrentTag - current tag.
+	// --- InÂ  : szCurrentTag - current tag.
 	//			 szNewTag - new tag.
 	//			 NewTagIsEndTag - specifies whether or not szNewTag is an end tag (TRUE)
 	//								or a start tag (FALSE)
@@ -167,27 +167,27 @@ public:
     virtual BOOL IsEndTagMissing(LPCTSTR szCurrentTag, LPCTSTR szNewTag, 
                                  BOOL NewTagIsEndTag);
 
-	// --- In  : pElement - unused.
+	// --- InÂ  : pElement - unused.
 	//			 bEmptyTag - unused.
 	// --- Out : 
 	// --- Returns : FALSE always.
 	// --- Effect : Override this member function if you need it.
     virtual BOOL IgnoreStartTag(COXParserElement* pElement, BOOL bEmptyTag);
 
-	// --- In  : szEndTag - end tag.
+	// --- InÂ  : szEndTag - end tag.
 	// --- Out : 
 	// --- Returns : TRUE if text style or font has been changed.
 	// --- Effect : Determines if end has changed style or font of the text.
     virtual BOOL IgnoreEndTag(LPCTSTR szEndTag);
 
-	// --- In  : hFile - a handle of a file to write attributes to.
+	// --- InÂ  : hFile - a handle of a file to write attributes to.
 	//			 pElement - a pointer to an object to write attributes from
 	// --- Out : 
 	// --- Returns : TRUE on success, FALSE otherwise
 	// --- Effect : Saves attributes from  an object to specified file.
     virtual BOOL WriteAttributes(HANDLE hFile, COXParserElement* pElement);
  
-	// --- In  : hFile - a handle of a file to write element to.
+	// --- InÂ  : hFile - a handle of a file to write element to.
 	//			 pElement - a pointer to an element to write
 	//			 nLevel - not used
 	// --- Out : 
@@ -196,7 +196,7 @@ public:
 	virtual BOOL WriteElement(HANDLE hFile, COXParserElement* pElement, int nLevel);
 
     
-	// --- In  : hFile - a handle of a file to write text to.
+	// --- InÂ  : hFile - a handle of a file to write text to.
 	//			 pObject - a pointer to an object to write text from
 	//			 nLevel - not used
 	// --- Out : 
@@ -204,7 +204,7 @@ public:
 	// --- Effect : Saves text from an object to specified file.
 	virtual BOOL WriteText(HANDLE hFile, COXParserObject* pObject, int nLevel);
 
-	// --- In  : nErrorCode - error code.
+	// --- InÂ  : nErrorCode - error code.
 	// --- Returns : pointer to string describing the error
 	// --- Effect : Returns description of the error.
     virtual LPCTSTR TranslateErrorCode(int nErrorCode);
