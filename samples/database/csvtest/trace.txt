@@ -1,0 +1,51 @@
+CCsvTestDlg::OnOK()
+    Reading next line
+        Reading next line : ID 1
+        Reading next line : NameGeorge
+        Reading next line : Byte 25
+        Reading next line : Integer -30
+        Reading next line : Float 234.345306
+        Reading next line : Double 3245235234.235000
+        Reading next line : StringThis is a test, this is only a test
+        Reading next line : Valid 0
+    ==== Reading next line exit
+    Reading next line
+        Reading next line : ID 2
+        Reading next line : NamePeter
+        Reading next line : Byte 255
+        Reading next line : Integer 32767
+        Reading next line : Float 3.141593
+        Reading next line : Double 3.141593
+        Reading next line : StringAnd now,
+        for something
+        completely different
+        Reading next line : Valid 1
+    ==== Reading next line exit
+    Reading next line
+        Reading next line : ID 3
+        Reading next line : NamePaul
+        Reading next line : Byte 0
+        Reading next line : Integer 2342
+        Reading next line : Float 2.718282
+        Reading next line : Double 23.140693
+        Reading next line : StringSome more numbers
+        Reading next line : Valid 0
+    ==== Reading next line exit
+    Reached the end of the first table
+    ==== Reached the end of the first table exit
+    Reading next line
+        Reading next line : ID 1
+        Reading next line : Last NameMcGill
+        Reading next line : Address1231 Sunnyside Circle
+    ==== Reading next line exit
+    Reading next line
+        Reading next line : ID 2
+        Reading next line : Last NamePiper
+        Reading next line : Address21w238 Honeysuckle Rose Lane
+    ==== Reading next line exit
+    Reading next line
+        Reading next line : ID 3
+        Reading next line : Last NameHoward
+        Reading next line : Address19 First Street
+    ==== Reading next line exit
+==== CCsvTestDlg::OnOK() exit

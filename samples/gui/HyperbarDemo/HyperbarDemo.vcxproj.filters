@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d87596ea-af14-4d43-98cb-a47ae1ea975e}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{05f83197-21da-4eb0-842a-de36b478aac7}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{5d04286b-44ca-44f2-95b4-8455f0912ece}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Hyperbar">
+      <UniqueIdentifier>{c1f0c8a9-e0cd-414f-a80f-f7e05e3c5ce7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomHyperbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HyperbarDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HyperbarDemoDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HyperbarDemoView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXHyperbar.cpp">
+      <Filter>Hyperbar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXHyperBarOverlay.cpp">
+      <Filter>Hyperbar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXHyperBarRender.cpp">
+      <Filter>Hyperbar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXHyperFrameWnd.cpp">
+      <Filter>Hyperbar</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="HyperbarDemo.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomHyperbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HyperbarDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HyperbarDemoDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HyperbarDemoView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\OXHyperbar.h">
+      <Filter>Hyperbar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\OXHyperBarOverlay.h">
+      <Filter>Hyperbar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\OXHyperBarRender.h">
+      <Filter>Hyperbar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\OXHyperFrameWnd.h">
+      <Filter>Hyperbar</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\book.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\code.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\disk.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\document.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\folders.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\globe.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\HyperbarDemo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\HyperbarDemo.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\HyperbarDemoDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\pc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\plug.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\pocketpc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\tools.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\user.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

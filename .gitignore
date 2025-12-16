@@ -34,7 +34,7 @@ Release*/
 *.tmp
 *.tmp_proj
 *_wpftmp.csproj
-#*.log
+*.log
 *.tlog
 .builds
 *.pidb

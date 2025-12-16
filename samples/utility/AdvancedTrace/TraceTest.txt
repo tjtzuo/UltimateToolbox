@@ -1,0 +1,32 @@
+AdvancedTrace Demo
+    Enable 3D controls
+    Initialize RichEdit control
+    Create Dialog
+    Initialize dialog data
+        Add 'About...' menu item to system menu.
+        Initialize controls
+        Setup static controls
+        Populate common controls with data
+    ==== Initialize dialog data exit
+    Demo Dialog
+        ========== State of dialog object: dump ==========
+        a CDialog at $0046F610
+            m_hWnd = $00860A82 (permanent window)
+            caption = "AdvancedTrace"
+            class name = "#32770"
+            rect = (L 1025, T 94, R 1511, B 572)
+            parent CWnd* = $00000000
+            style = $94C800C4
+            m_lpszTemplateName = 102
+            m_hDialogTemplate = $00000000
+            m_lpDialogTemplate = $00000000
+            m_pParentWnd = $00000000
+            m_nIDHelp = 102
+        ==== a CDialog at $0046F610 exit
+        ========== end of State of dialog object: dump ==========
+    ==== Demo Dialog exit
+    Close Application
+==== AdvancedTrace Demo exit
+Clean up
+    Unload the library for rich edit text support
+==== Clean up exit
