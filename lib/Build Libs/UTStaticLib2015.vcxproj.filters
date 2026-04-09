@@ -1,0 +1,692 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{bf017fe7-3851-4bde-a284-6dc3a9ae0e57}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="Source Files\UTB">
+      <UniqueIdentifier>{133062fe-e058-43b9-a0a6-01de76111d1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5b5c6501-ef93-4bd5-8beb-5e63da5c2635}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\OXTaskPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CONVFILE.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\COPYTREE.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CPYSTDLG.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\DIR.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\DIRLIST.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\DSTRLIST.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\EVNTLOG.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\FILE.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\FILELIST.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\MDELDLG.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\MFCToolBar.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OX3DTabView.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXActiveDesktop.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXAdvancedAssert.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXAdvancedAssertMail.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXAppBar.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXAutoComplete.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXAutoListBox.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXBackgroundPainter.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXBITBUF.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXBitmapButton.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXBitmapMenu.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXBitmapMenuOrganizer.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXBMPFilePickerCombo.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXBMPFle.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXBrowseColorEdit.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXBrowseDirEdit.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXBrowseDirEditList.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXButtonAppearanceDlg.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCalculatorCtrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCalculatorEdit.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCalendar.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCalendarEdit.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCalendarPopup.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCaptionPainter.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXChildFrameState.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXClipPocket.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCMPFL.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXColorPickerButton.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXColorPickerCtrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXComboPickerCtrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCOMPR.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXContextHelpDialog.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXContextHelpPropertyPage.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXContextHelpPropertySheet.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCoolBar.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCoolComboBox.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCoolControlOrganizer.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCoolCtrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCoolToolBar.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCRCChk.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCsvFile.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCustomizeBackgroundPage.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCustomizeCaptionPage.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCustomizeCommandsPage.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCustomizeCoolControlsPage.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCustomizeInstanceManagerPage.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCustomizeIntelliMousePage.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCustomizeManager.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCustomizePage.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCustomizeShortkeysPage.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCustomizeSplashWindowPage.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCustomizeTabbedMDIPage.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCustomizeToolbarsPage.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCustomizeTrayIconPage.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCustomizeWorkspaceStatePage.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXDao.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXDateTimeCtrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXDckPPg.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXDckPSh.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXDFlHdr.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Oxdib.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXDirDlg.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXDlgBar.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXDLLManager.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\oxdocktabctrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXDocTemplateSpy.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXDragDockContext.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXDragDropCommands.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXEdit.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXEditList.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXFileChanger.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXFileWatcher.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXFileWatchNotifier.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXFolderPickerDlg.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXFontComboBox.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXFontPickerButton.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXFrameWndDock.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXFullScreenFrame.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXGphFle.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXGraphics.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\oxgridedit.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXGridHdr.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXGridList.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXHashTable.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXHistoryCombo.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXHistoryCtrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXHookWnd.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXHTMLParser.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXHyperbar.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXHyperBarOverlay.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXHyperBarRender.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXHyperFrameWnd.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXHyperLinkAction.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXImageListBox.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXImageViewer.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXInstanceManager.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXInteger.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXIntelliMouse.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXIPEdit.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXItemTip.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXItemTipWnd.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXIteratorRegistryItem.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXIteratorService.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXIteratorUNC.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXJPGCod.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXJPGCom.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXJPGDom.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXJPGExp.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXJPGFle.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXLayoutManager.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXListBoxEx.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXListEdit.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXMaskedEdit.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXMDIFloatWnd.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXMenuBar.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXMetaFile.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXMonthCalCtrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXMulticlipboardDlg.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXMultiComboBox.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXNetBrowseTree.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXNotesEditView.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXOptionTreeCtrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXParser.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXPhysicalEdit.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXPhysicalEditEx.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXPopupBarCtrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXPreviewDialog.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXProcess.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXPropertiesWnd.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXPropertyDescriptionPane.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXPropertyTree.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXQuickString.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXRectTracker.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXRegExpression.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXRegistryItem.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXRegistryValFile.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXRegistryWatcher.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXRegistryWatchNotifier.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXResourceFile.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXResourceLibrary.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXRollup.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXRoundedButton.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXRulerOrganizer.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXScreenGrab.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXScript.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXScrollTip.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXScrollTipOwner.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXScrollWnd.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSeparator.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXService.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXShape.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXShdWnd.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXShellFolderTree.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXShellNamespaceNavigator.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXShellObjectList.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXShortcut.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXShortcutBar.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXShortkeysOrganizer.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSizeCtrlBar.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSizeDlgBar.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSizeDockBar.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSizeToolBar.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSkinnedComboBox.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSkinnedSpinCtrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSkinnedTabCtrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSkins.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSound.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSoundCustomizeDlg.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSoundEffectManager.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSoundWnd.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSpinCtrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSplashWnd.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSplashWndDIB.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSplitterColRowState.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSplitterRect.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSplitterWnd.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXStatic.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXStaticHyperLink.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXStaticText.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSysInfo.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXSzMiniDockFrmWnd.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXTabClientWnd.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXTabView.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXTaskbarIcon.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXTleBar.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXToolTipCtrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXTrace.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXTreeCal.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXTreeCombo.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXTreeCtrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXTreeEdit.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXTreeHeader.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXTreeItem.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXUNC.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXUNCStandardActor.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXURL.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXUsertl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXUUDec.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXUxTheme.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXWatchedDir.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\oxwebctrl.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXWorkspaceState.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Oxzoomvw.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Path.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\PATHITER.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\PROGRESS.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\UTBStrOp.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\WATCHBUF.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\Xstatus4.cpp">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\XSTRING.CPP">
+      <Filter>Source Files\UTB</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

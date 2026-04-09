@@ -1,0 +1,1074 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugMFCShared|Win32">
+      <Configuration>DebugMFCShared</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugMFCShared|x64">
+      <Configuration>DebugMFCShared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugMFCStatic|Win32">
+      <Configuration>DebugMFCStatic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugMFCStatic|x64">
+      <Configuration>DebugMFCStatic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMFCShared|Win32">
+      <Configuration>ReleaseMFCShared</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMFCShared|x64">
+      <Configuration>ReleaseMFCShared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMFCStatic|Win32">
+      <Configuration>ReleaseMFCStatic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMFCStatic|x64">
+      <Configuration>ReleaseMFCStatic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnicodeDebugMFCShared|Win32">
+      <Configuration>UnicodeDebugMFCShared</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnicodeDebugMFCShared|x64">
+      <Configuration>UnicodeDebugMFCShared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnicodeDebugMFCStatic|Win32">
+      <Configuration>UnicodeDebugMFCStatic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnicodeDebugMFCStatic|x64">
+      <Configuration>UnicodeDebugMFCStatic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnicodeReleaseMFCShared|Win32">
+      <Configuration>UnicodeReleaseMFCShared</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnicodeReleaseMFCShared|x64">
+      <Configuration>UnicodeReleaseMFCShared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnicodeReleaseMFCStatic|Win32">
+      <Configuration>UnicodeReleaseMFCStatic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnicodeReleaseMFCStatic|x64">
+      <Configuration>UnicodeReleaseMFCStatic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>UTStaticLib</ProjectName>
+    <ProjectGuid>{0946B82D-46C5-4EEE-8FC9-884CBDBC4EAB}</ProjectGuid>
+    <RootNamespace>UTStaticLib</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCShared|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCShared|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCStatic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCShared|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCStatic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCStatic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCStatic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCShared|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCShared|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCShared|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCStatic|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCShared|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCStatic|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCStatic|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCStatic|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCShared|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCShared|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCShared|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCStatic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCShared|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCStatic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCStatic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCStatic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCShared|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCShared|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCShared|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCStatic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCShared|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCStatic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCStatic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCStatic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCShared|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCShared|Win32'">
+    <OutDir>.\ReleaseMFCShared\</OutDir>
+    <IntDir>.\ReleaseMFCShared\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCStatic|Win32'">
+    <OutDir>.\UnicodeDebugMFCStatic\</OutDir>
+    <IntDir>.\UnicodeDebugMFCStatic\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCStatic|Win32'">
+    <OutDir>.\DebugMFCStatic\</OutDir>
+    <IntDir>.\DebugMFCStatic\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCStatic|Win32'">
+    <OutDir>.\UnicodeReleaseMFCStatic\</OutDir>
+    <IntDir>.\UnicodeReleaseMFCStatic\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCShared|Win32'">
+    <OutDir>.\UnicodeDebugMFCShared\</OutDir>
+    <IntDir>.\UnicodeDebugMFCShared\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCStatic|Win32'">
+    <OutDir>.\ReleaseMFCStatic\</OutDir>
+    <IntDir>.\ReleaseMFCStatic\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCShared|Win32'">
+    <OutDir>.\DebugMFCShared\</OutDir>
+    <IntDir>.\DebugMFCShared\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCShared|Win32'">
+    <OutDir>.\UnicodeReleaseMFCShared\</OutDir>
+    <IntDir>.\UnicodeReleaseMFCShared\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCShared|x64'">
+    <OutDir>..\libs\$(Platform)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>UTLibSharedR</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCStatic|x64'">
+    <OutDir>..\libs\$(Platform)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>UTLibStaticDU</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCStatic|x64'">
+    <OutDir>..\libs\$(Platform)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>UTLibStaticD</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCStatic|x64'">
+    <OutDir>..\libs\$(Platform)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>UTLibStaticRU</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCShared|x64'">
+    <OutDir>..\libs\$(Platform)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>UTLibSharedDU</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCStatic|x64'">
+    <OutDir>..\libs\$(Platform)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>UTLibStaticR</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCShared|x64'">
+    <OutDir>..\libs\$(Platform)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>UTLibSharedD</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCShared|x64'">
+    <OutDir>..\libs\$(Platform)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>UTLibSharedRU</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCShared|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\ReleaseMFCShared/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\ReleaseMFCShared/</AssemblerListingLocation>
+      <ObjectFileName>.\ReleaseMFCShared/</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseMFCShared/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\libs\UTLibSharedR.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseMFCShared/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCStatic|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\UnicodeDebugMFCStatic/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\UnicodeDebugMFCStatic/</AssemblerListingLocation>
+      <ObjectFileName>.\UnicodeDebugMFCStatic/</ObjectFileName>
+      <ProgramDataBaseFileName>.\UnicodeDebugMFCStatic/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\libs\UTLibStaticDU.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\UnicodeDebugMFCStatic/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCStatic|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\DebugMFCStatic/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\DebugMFCStatic/</AssemblerListingLocation>
+      <ObjectFileName>.\DebugMFCStatic/</ObjectFileName>
+      <ProgramDataBaseFileName>.\DebugMFCStatic/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\libs\UTLibStaticD.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\DebugMFCStatic/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCStatic|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\UnicodeReleaseMFCStatic/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\UnicodeReleaseMFCStatic/</AssemblerListingLocation>
+      <ObjectFileName>.\UnicodeReleaseMFCStatic/</ObjectFileName>
+      <ProgramDataBaseFileName>.\UnicodeReleaseMFCStatic/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\libs\UTLibStaticRU.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\UnicodeReleaseMFCStatic/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCShared|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\UnicodeDebugMFCShared/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\UnicodeDebugMFCShared/</AssemblerListingLocation>
+      <ObjectFileName>.\UnicodeDebugMFCShared/</ObjectFileName>
+      <ProgramDataBaseFileName>.\UnicodeDebugMFCShared/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\libs\UTLibSharedDU.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\UnicodeDebugMFCShared/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCStatic|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\ReleaseMFCStatic/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\ReleaseMFCStatic/</AssemblerListingLocation>
+      <ObjectFileName>.\ReleaseMFCStatic/</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseMFCStatic/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\libs\UTLibStaticR.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseMFCStatic/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCShared|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\DebugMFCShared/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\DebugMFCShared/</AssemblerListingLocation>
+      <ObjectFileName>.\DebugMFCShared/</ObjectFileName>
+      <ProgramDataBaseFileName>.\DebugMFCShared/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\libs\UTLibSharedD.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\DebugMFCShared/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCShared|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\UnicodeReleaseMFCShared/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\UnicodeReleaseMFCShared/</AssemblerListingLocation>
+      <ObjectFileName>.\UnicodeReleaseMFCShared/</ObjectFileName>
+      <ProgramDataBaseFileName>.\UnicodeReleaseMFCShared/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>..\libs\UTLibSharedRU.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\UnicodeReleaseMFCShared/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCShared|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\ReleaseMFCShared/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\ReleaseMFCShared/</AssemblerListingLocation>
+      <ObjectFileName>.\ReleaseMFCShared/</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseMFCShared/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseMFCShared/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCStatic|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\UnicodeDebugMFCStatic/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\UnicodeDebugMFCStatic/</AssemblerListingLocation>
+      <ObjectFileName>.\UnicodeDebugMFCStatic/</ObjectFileName>
+      <ProgramDataBaseFileName>.\UnicodeDebugMFCStatic/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\UnicodeDebugMFCStatic/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCStatic|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\DebugMFCStatic/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\DebugMFCStatic/</AssemblerListingLocation>
+      <ObjectFileName>.\DebugMFCStatic/</ObjectFileName>
+      <ProgramDataBaseFileName>.\DebugMFCStatic/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\DebugMFCStatic/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCStatic|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\UnicodeReleaseMFCStatic/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\UnicodeReleaseMFCStatic/</AssemblerListingLocation>
+      <ObjectFileName>.\UnicodeReleaseMFCStatic/</ObjectFileName>
+      <ProgramDataBaseFileName>.\UnicodeReleaseMFCStatic/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\UnicodeReleaseMFCStatic/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCShared|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\UnicodeDebugMFCShared/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\UnicodeDebugMFCShared/</AssemblerListingLocation>
+      <ObjectFileName>.\UnicodeDebugMFCShared/</ObjectFileName>
+      <ProgramDataBaseFileName>.\UnicodeDebugMFCShared/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\UnicodeDebugMFCShared/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCStatic|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\ReleaseMFCStatic/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\ReleaseMFCStatic/</AssemblerListingLocation>
+      <ObjectFileName>.\ReleaseMFCStatic/</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseMFCStatic/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseMFCStatic/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMFCShared|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\DebugMFCShared/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\DebugMFCShared/</AssemblerListingLocation>
+      <ObjectFileName>.\DebugMFCShared/</ObjectFileName>
+      <ProgramDataBaseFileName>.\DebugMFCShared/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\DebugMFCShared/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCShared|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\UnicodeReleaseMFCShared/UTStaticLib.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\UnicodeReleaseMFCShared/</AssemblerListingLocation>
+      <ObjectFileName>.\UnicodeReleaseMFCShared/</ObjectFileName>
+      <ProgramDataBaseFileName>.\UnicodeReleaseMFCShared/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\UnicodeReleaseMFCShared/UTStaticLib.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\CONVFILE.CPP" />
+    <ClCompile Include="..\..\source\COPYTREE.CPP" />
+    <ClCompile Include="..\..\source\CPYSTDLG.CPP" />
+    <ClCompile Include="..\..\source\DIR.CPP" />
+    <ClCompile Include="..\..\source\DIRLIST.CPP" />
+    <ClCompile Include="..\..\source\DSTRLIST.CPP" />
+    <ClCompile Include="..\..\source\EVNTLOG.CPP" />
+    <ClCompile Include="..\..\source\FILE.CPP" />
+    <ClCompile Include="..\..\source\FILELIST.CPP" />
+    <ClCompile Include="..\..\source\MDELDLG.CPP" />
+    <ClCompile Include="..\..\source\MFCToolBar.cpp" />
+    <ClCompile Include="..\..\source\OX3DTabView.cpp" />
+    <ClCompile Include="..\..\source\OXActiveDesktop.cpp" />
+    <ClCompile Include="..\..\source\OXAdvancedAssert.cpp" />
+    <ClCompile Include="..\..\source\OXAdvancedAssertMail.cpp" />
+    <ClCompile Include="..\..\source\OXAppBar.cpp" />
+    <ClCompile Include="..\..\source\OXAutoComplete.cpp" />
+    <ClCompile Include="..\..\source\OXAutoListBox.cpp" />
+    <ClCompile Include="..\..\source\OXBackgroundPainter.cpp" />
+    <ClCompile Include="..\..\source\OXBITBUF.CPP" />
+    <ClCompile Include="..\..\source\OXBitmapButton.cpp" />
+    <ClCompile Include="..\..\source\OXBitmapMenu.cpp" />
+    <ClCompile Include="..\..\source\OXBitmapMenuOrganizer.cpp" />
+    <ClCompile Include="..\..\source\OXBMPFilePickerCombo.cpp" />
+    <ClCompile Include="..\..\source\OXBMPFle.cpp" />
+    <ClCompile Include="..\..\source\OXBrowseColorEdit.cpp" />
+    <ClCompile Include="..\..\source\OXBrowseDirEdit.cpp" />
+    <ClCompile Include="..\..\source\OXBrowseDirEditList.cpp" />
+    <ClCompile Include="..\..\source\OXButtonAppearanceDlg.cpp" />
+    <ClCompile Include="..\..\source\OXCalculatorCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXCalculatorEdit.cpp" />
+    <ClCompile Include="..\..\source\OXCalendar.cpp" />
+    <ClCompile Include="..\..\source\OXCalendarEdit.cpp" />
+    <ClCompile Include="..\..\source\OXCalendarPopup.cpp" />
+    <ClCompile Include="..\..\source\OXCaptionPainter.cpp" />
+    <ClCompile Include="..\..\source\OXChildFrameState.cpp" />
+    <ClCompile Include="..\..\source\OXClipPocket.cpp" />
+    <ClCompile Include="..\..\source\OXCMPFL.CPP" />
+    <ClCompile Include="..\..\source\OXColorPickerButton.cpp" />
+    <ClCompile Include="..\..\source\OXColorPickerCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXComboPickerCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXCOMPR.CPP" />
+    <ClCompile Include="..\..\source\OXContextHelpDialog.cpp" />
+    <ClCompile Include="..\..\source\OXContextHelpPropertyPage.cpp" />
+    <ClCompile Include="..\..\source\OXContextHelpPropertySheet.cpp" />
+    <ClCompile Include="..\..\source\OXCoolBar.cpp" />
+    <ClCompile Include="..\..\source\OXCoolComboBox.cpp" />
+    <ClCompile Include="..\..\source\OXCoolControlOrganizer.cpp" />
+    <ClCompile Include="..\..\source\OXCoolCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXCoolToolBar.cpp" />
+    <ClCompile Include="..\..\source\OXCRCChk.CPP" />
+    <ClCompile Include="..\..\source\OXCsvFile.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeBackgroundPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeCaptionPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeCommandsPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeCoolControlsPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeInstanceManagerPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeIntelliMousePage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeManager.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizePage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeShortkeysPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeSplashWindowPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeTabbedMDIPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeToolbarsPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeTrayIconPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeWorkspaceStatePage.cpp" />
+    <ClCompile Include="..\..\source\OXDao.cpp" />
+    <ClCompile Include="..\..\source\OXDateTimeCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXDckPPg.cpp" />
+    <ClCompile Include="..\..\source\OXDckPSh.cpp" />
+    <ClCompile Include="..\..\source\OXDFlHdr.cpp" />
+    <ClCompile Include="..\..\source\Oxdib.cpp" />
+    <ClCompile Include="..\..\source\OXDirDlg.cpp" />
+    <ClCompile Include="..\..\source\OXDlgBar.cpp" />
+    <ClCompile Include="..\..\source\OXDLLManager.cpp" />
+    <ClCompile Include="..\..\source\oxdocktabctrl.cpp" />
+    <ClCompile Include="..\..\source\OXDocTemplateSpy.cpp" />
+    <ClCompile Include="..\..\source\OXDragDockContext.CPP" />
+    <ClCompile Include="..\..\source\OXDragDropCommands.cpp" />
+    <ClCompile Include="..\..\source\OXEdit.cpp" />
+    <ClCompile Include="..\..\source\OXEditList.cpp" />
+    <ClCompile Include="..\..\source\OXFileChanger.cpp" />
+    <ClCompile Include="..\..\source\OXFileWatcher.cpp" />
+    <ClCompile Include="..\..\source\OXFileWatchNotifier.cpp" />
+    <ClCompile Include="..\..\source\OXFolderPickerDlg.cpp" />
+    <ClCompile Include="..\..\source\OXFontComboBox.cpp" />
+    <ClCompile Include="..\..\source\OXFontPickerButton.cpp" />
+    <ClCompile Include="..\..\source\OXFrameWndDock.CPP" />
+    <ClCompile Include="..\..\source\OXFullScreenFrame.cpp" />
+    <ClCompile Include="..\..\source\OXGphFle.cpp" />
+    <ClCompile Include="..\..\source\OXGraphics.cpp" />
+    <ClCompile Include="..\..\source\oxgridedit.cpp" />
+    <ClCompile Include="..\..\source\OXGridHdr.cpp" />
+    <ClCompile Include="..\..\source\OXGridList.cpp" />
+    <ClCompile Include="..\..\source\OXHashTable.cpp" />
+    <ClCompile Include="..\..\source\OXHistoryCombo.cpp" />
+    <ClCompile Include="..\..\source\OXHistoryCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXHookWnd.cpp" />
+    <ClCompile Include="..\..\source\OXHTMLParser.cpp" />
+    <ClCompile Include="..\..\source\OXHyperbar.cpp" />
+    <ClCompile Include="..\..\source\OXHyperBarOverlay.cpp" />
+    <ClCompile Include="..\..\source\OXHyperBarRender.cpp" />
+    <ClCompile Include="..\..\source\OXHyperFrameWnd.cpp" />
+    <ClCompile Include="..\..\source\OXHyperLinkAction.cpp" />
+    <ClCompile Include="..\..\source\OXImageListBox.cpp" />
+    <ClCompile Include="..\..\source\OXImageViewer.cpp" />
+    <ClCompile Include="..\..\source\OXInstanceManager.cpp" />
+    <ClCompile Include="..\..\source\OXInteger.cpp" />
+    <ClCompile Include="..\..\source\OXIntelliMouse.cpp" />
+    <ClCompile Include="..\..\source\OXIPEdit.cpp" />
+    <ClCompile Include="..\..\source\OXItemTip.cpp" />
+    <ClCompile Include="..\..\source\OXItemTipWnd.cpp" />
+    <ClCompile Include="..\..\source\OXIteratorRegistryItem.cpp" />
+    <ClCompile Include="..\..\source\OXIteratorService.cpp" />
+    <ClCompile Include="..\..\source\OXIteratorUNC.cpp" />
+    <ClCompile Include="..\..\source\OXJPGCod.cpp" />
+    <ClCompile Include="..\..\source\OXJPGCom.cpp" />
+    <ClCompile Include="..\..\source\OXJPGDom.cpp" />
+    <ClCompile Include="..\..\source\OXJPGExp.cpp" />
+    <ClCompile Include="..\..\source\OXJPGFle.cpp" />
+    <ClCompile Include="..\..\source\OXLayoutManager.cpp" />
+    <ClCompile Include="..\..\source\OXListBoxEx.cpp" />
+    <ClCompile Include="..\..\source\OXListEdit.cpp" />
+    <ClCompile Include="..\..\source\OXMaskedEdit.cpp" />
+    <ClCompile Include="..\..\source\OXMDIFloatWnd.cpp" />
+    <ClCompile Include="..\..\source\OXMenuBar.cpp" />
+    <ClCompile Include="..\..\source\OXMetaFile.cpp" />
+    <ClCompile Include="..\..\source\OXMonthCalCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXMulticlipboardDlg.cpp" />
+    <ClCompile Include="..\..\source\OXMultiComboBox.cpp" />
+    <ClCompile Include="..\..\source\OXNetBrowseTree.cpp" />
+    <ClCompile Include="..\..\source\OXNotesEditView.cpp" />
+    <ClCompile Include="..\..\source\OXOptionTreeCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXParser.cpp" />
+    <ClCompile Include="..\..\source\OXPhysicalEdit.cpp" />
+    <ClCompile Include="..\..\source\OXPhysicalEditEx.cpp" />
+    <ClCompile Include="..\..\source\OXPopupBarCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXPreviewDialog.cpp" />
+    <ClCompile Include="..\..\source\OXProcess.cpp" />
+    <ClCompile Include="..\..\source\OXPropertiesWnd.cpp" />
+    <ClCompile Include="..\..\source\OXPropertyDescriptionPane.cpp" />
+    <ClCompile Include="..\..\source\OXPropertyTree.cpp" />
+    <ClCompile Include="..\..\source\OXQuickString.cpp" />
+    <ClCompile Include="..\..\source\OXRectTracker.cpp" />
+    <ClCompile Include="..\..\source\OXRegExpression.cpp" />
+    <ClCompile Include="..\..\source\OXRegistryItem.cpp" />
+    <ClCompile Include="..\..\source\OXRegistryValFile.cpp" />
+    <ClCompile Include="..\..\source\OXRegistryWatcher.cpp" />
+    <ClCompile Include="..\..\source\OXRegistryWatchNotifier.cpp" />
+    <ClCompile Include="..\..\source\OXResourceFile.cpp" />
+    <ClCompile Include="..\..\source\OXResourceLibrary.cpp" />
+    <ClCompile Include="..\..\source\OXRollup.CPP" />
+    <ClCompile Include="..\..\source\OXRoundedButton.cpp" />
+    <ClCompile Include="..\..\source\OXRulerOrganizer.cpp" />
+    <ClCompile Include="..\..\source\OXScreenGrab.cpp" />
+    <ClCompile Include="..\..\source\OXScript.cpp" />
+    <ClCompile Include="..\..\source\OXScrollTip.cpp" />
+    <ClCompile Include="..\..\source\OXScrollTipOwner.cpp" />
+    <ClCompile Include="..\..\source\OXScrollWnd.cpp" />
+    <ClCompile Include="..\..\source\OXSeparator.cpp" />
+    <ClCompile Include="..\..\source\OXService.cpp" />
+    <ClCompile Include="..\..\source\OXShape.cpp" />
+    <ClCompile Include="..\..\source\OXShdWnd.cpp" />
+    <ClCompile Include="..\..\source\OXShellFolderTree.cpp" />
+    <ClCompile Include="..\..\source\OXShellNamespaceNavigator.cpp" />
+    <ClCompile Include="..\..\source\OXShellObjectList.cpp" />
+    <ClCompile Include="..\..\source\OXShortcut.cpp" />
+    <ClCompile Include="..\..\source\OXShortcutBar.cpp" />
+    <ClCompile Include="..\..\source\OXShortkeysOrganizer.cpp" />
+    <ClCompile Include="..\..\source\OXSizeCtrlBar.CPP" />
+    <ClCompile Include="..\..\source\OXSizeDlgBar.cpp" />
+    <ClCompile Include="..\..\source\OXSizeDockBar.cpp" />
+    <ClCompile Include="..\..\source\OXSizeToolBar.cpp" />
+    <ClCompile Include="..\..\source\OXSkinnedComboBox.cpp" />
+    <ClCompile Include="..\..\source\OXSkinnedSpinCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXSkinnedTabCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXSkins.cpp" />
+    <ClCompile Include="..\..\source\OXSound.cpp" />
+    <ClCompile Include="..\..\source\OXSoundCustomizeDlg.cpp" />
+    <ClCompile Include="..\..\source\OXSoundEffectManager.cpp" />
+    <ClCompile Include="..\..\source\OXSoundWnd.cpp" />
+    <ClCompile Include="..\..\source\OXSpinCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXSplashWnd.cpp" />
+    <ClCompile Include="..\..\source\OXSplashWndDIB.cpp" />
+    <ClCompile Include="..\..\source\OXSplitterColRowState.cpp" />
+    <ClCompile Include="..\..\source\OXSplitterRect.cpp" />
+    <ClCompile Include="..\..\source\OXSplitterWnd.cpp" />
+    <ClCompile Include="..\..\source\OXStatic.cpp" />
+    <ClCompile Include="..\..\source\OXStaticHyperLink.cpp" />
+    <ClCompile Include="..\..\source\OXStaticText.cpp" />
+    <ClCompile Include="..\..\source\OXSysInfo.cpp" />
+    <ClCompile Include="..\..\source\OXSzMiniDockFrmWnd.cpp" />
+    <ClCompile Include="..\..\source\OXTabClientWnd.cpp" />
+    <ClCompile Include="..\..\source\OXTabView.cpp" />
+    <ClCompile Include="..\..\source\OXTaskbarIcon.cpp" />
+    <ClCompile Include="..\..\source\OXTaskPanel.cpp" />
+    <ClCompile Include="..\..\source\OXTleBar.CPP" />
+    <ClCompile Include="..\..\source\OXToolTipCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXTrace.cpp" />
+    <ClCompile Include="..\..\source\OXTreeCal.cpp" />
+    <ClCompile Include="..\..\source\OXTreeCombo.cpp" />
+    <ClCompile Include="..\..\source\OXTreeCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXTreeEdit.cpp" />
+    <ClCompile Include="..\..\source\OXTreeHeader.cpp" />
+    <ClCompile Include="..\..\source\OXTreeItem.cpp" />
+    <ClCompile Include="..\..\source\OXUNC.cpp" />
+    <ClCompile Include="..\..\source\OXUNCStandardActor.cpp" />
+    <ClCompile Include="..\..\source\OXURL.cpp" />
+    <ClCompile Include="..\..\source\OXUsertl.cpp" />
+    <ClCompile Include="..\..\source\OXUUDec.cpp" />
+    <ClCompile Include="..\..\source\OXUxTheme.cpp" />
+    <ClCompile Include="..\..\source\OXWatchedDir.cpp" />
+    <ClCompile Include="..\..\source\oxwebctrl.cpp" />
+    <ClCompile Include="..\..\source\OXWorkspaceState.cpp" />
+    <ClCompile Include="..\..\source\Oxzoomvw.cpp" />
+    <ClCompile Include="..\..\source\Path.cpp" />
+    <ClCompile Include="..\..\source\PATHITER.CPP" />
+    <ClCompile Include="..\..\source\PROGRESS.CPP" />
+    <ClCompile Include="..\..\source\UTBStrOp.cpp" />
+    <ClCompile Include="..\..\source\WATCHBUF.CPP" />
+    <ClCompile Include="..\..\source\Xstatus4.cpp" />
+    <ClCompile Include="..\..\source\XSTRING.CPP" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugMFCShared|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugMFCShared|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugMFCStatic|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugMFCStatic|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCShared|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCShared|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCStatic|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseMFCStatic|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCShared|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCShared|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCStatic|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnicodeDebugMFCStatic|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCShared|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCShared|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCStatic|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnicodeReleaseMFCStatic|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

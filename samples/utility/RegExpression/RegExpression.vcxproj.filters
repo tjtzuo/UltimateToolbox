@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{def0bcf9-043d-40ce-a5e0-0551558ae9a9}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Skins Framework">
+      <UniqueIdentifier>{de492317-42b2-41f2-ac5a-10ef8ba16e1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{c56c3f22-dee5-4382-99f8-5990a4384a12}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{6c51498b-f445-4c69-a84a-ee855a4a1a93}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FindDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\UTSampleAbout\HtmlCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\MFCToolBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyRegular.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXAdvancedAssert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXAdvancedAssertMail.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\OXHistoryCombo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\OXRegExpression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegExpression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegExpressionDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegExpressionView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\UTBStrOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\UTSampleAbout\UTSampleAbout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OX3DTabView.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXBitmapMenu.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXBitmapMenuOrganizer.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXCoolToolBar.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\oxdocktabctrl.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXDragDockContext.CPP">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXFrameWndDock.CPP">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXMDIFloatWnd.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXMenuBar.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXRectTracker.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXShortcutBar.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXSizeCtrlBar.CPP">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXSizeDockBar.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXSizeToolBar.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXSkinnedComboBox.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXSkinnedSpinCtrl.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXSkinnedTabCtrl.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXSkins.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXSplitterRect.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXSzMiniDockFrmWnd.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXTabClientWnd.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\OXToolTipCtrl.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\OXUxTheme.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Xstatus4.cpp">
+      <Filter>Source Files\Skins Framework</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RegExpression.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FindDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyRegular.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Ultimate Toolbox\Include\OXHistoryCombo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Ultimate Toolbox\Include\OXHistoryComboRes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\OXRegExpression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegExpression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegExpressionDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegExpressionView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\indicato.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\Ultimate Toolbox\Include\RES\OXHistoryComboImg.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\RegExpression.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\RegExpression.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\RegExpressionDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

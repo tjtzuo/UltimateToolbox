@@ -29,8 +29,6 @@ CFG=UTStaticLib - Win32 UnicodeDebugMFCStatic
 
 # Begin Project
 # PROP AllowPerConfigDependencies 0
-# PROP Scc_ProjName ""
-# PROP Scc_LocalPath ""
 CPP=cl.exe
 RSC=rc.exe
 
@@ -47,7 +45,7 @@ RSC=rc.exe
 # PROP Intermediate_Dir "DebugMFCShared"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MDd /W4 /Gm /GX /ZI /Od /I "..\..\Include" /I "..\..\Lib\Jpeg" /I "..\..\Lib\Jpeg\Jpegsrc6" /I "..\..\Lib\Processor\Intel\CPUINF32" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Yu"stdafx.h" /FD /c
-# ADD CPP /nologo /MDd /W4 /Gm /GX /ZI /Od /I "..\..\Include" /I "..\..\Lib\Jpeg" /I "..\..\Lib\Jpeg\Jpegsrc6" /I "..\..\Lib\Processor\Intel\CPUINF32" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR /Yu"stdafx.h" /FD /c
+# ADD CPP /nologo /MDd /W4 /Gm /GX /ZI /Od /I "..\..\Include" /I "..\..\Lib\Jpeg" /I "..\..\Lib\Jpeg\Jpegsrc6" /I "..\..\Lib\Processor\Intel\CPUINF32" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Yu"stdafx.h" /FD /c
 # ADD BASE RSC /l 0x409 /i "..\..\Include" /i "..\..\Lib\Jpeg" /i "..\..\Lib\Jpeg\Jpegsrc6"
 # ADD RSC /l 0x409 /i "..\..\Include" /i "..\..\Lib\Jpeg" /i "..\..\Lib\Jpeg\Jpegsrc6"
 BSC32=bscmake.exe

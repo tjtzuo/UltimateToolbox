@@ -25,8 +25,6 @@ CFG=jpg - Win32 DebugUnicode
 
 # Begin Project
 # PROP AllowPerConfigDependencies 0
-# PROP Scc_ProjName ""
-# PROP Scc_LocalPath ""
 CPP=cl.exe
 RSC=rc.exe
 
@@ -323,47 +321,11 @@ SOURCE=.\JPEGSRC6\JUTILS.C
 # PROP Default_Filter "h;hpp;hxx;hm;inl;fi;fd"
 # Begin Source File
 
-SOURCE=.\Jpegsrc6\JCHUFF.H
+SOURCE=.\jconfig.h
 # End Source File
 # Begin Source File
 
-SOURCE=.\Jpegsrc6\jconfig.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\Jpegsrc6\JDCT.H
-# End Source File
-# Begin Source File
-
-SOURCE=.\Jpegsrc6\JDHUFF.H
-# End Source File
-# Begin Source File
-
-SOURCE=.\Jpegsrc6\JERROR.H
-# End Source File
-# Begin Source File
-
-SOURCE=.\Jpegsrc6\JINCLUDE.H
-# End Source File
-# Begin Source File
-
-SOURCE=.\Jpegsrc6\JMEMSYS.H
-# End Source File
-# Begin Source File
-
-SOURCE=.\Jpegsrc6\Jmorecfg.h
-# End Source File
-# Begin Source File
-
-SOURCE=.\Jpegsrc6\JPEGINT.H
-# End Source File
-# Begin Source File
-
-SOURCE=.\Jpegsrc6\JPEGLIB.H
-# End Source File
-# Begin Source File
-
-SOURCE=.\Jpegsrc6\JVERSION.H
+SOURCE=.\JMORECFG.H
 # End Source File
 # End Group
 # Begin Group "Resource Files"
