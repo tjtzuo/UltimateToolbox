@@ -1,4 +1,4 @@
-// ==========================================================================
+ï»¿// ==========================================================================
 // 			Class Implementation : COXTimeEdit, COXAngleEdit,
 //									COXLengthEdit, COXTempEdit
 // ==========================================================================
@@ -8,7 +8,7 @@
 // Version: 9.3
 
 // This software along with its related components, documentation and files ("The Libraries")
-// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is Â© 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -36,9 +36,9 @@ LPCTSTR	COXLengthEdit::m_rgpszLengthUnitNames[] =
 	_T("dm"),			// OX_LENGTH_DECIMETER	
 	_T("cm"),			// OX_LENGTH_CENTIMETER
 	_T("mm"),			// OX_LENGTH_MILLIMETER
-	_T("µm"),			// OX_LENGTH_MICROMETER
+	_T("Âµm"),			// OX_LENGTH_MICROMETER
 	_T("nm"),			// OX_LENGTH_NANOMETER	
-	_T("Å"),			// OX_LENGTH_ANGSTROM	
+	_T("Ã…"),			// OX_LENGTH_ANGSTROM	
 	_T("\""),			// OX_LENGTH_INCH		
 	_T("pt"),			// OX_LENGTH_POINT		
 };
@@ -50,9 +50,9 @@ COXConversionParams COXLengthEdit::m_rgnLengthConversionParams[] =
 		{0,		1e-1,				0},		// OX_LENGTH_DECIMETER	(1 dm = 1e-1 m)
 		{0,		1e-2,				0},		// OX_LENGTH_CENTIMETER	(1 cm = 1e-2 m)
 		{0,		1e-3,				0},		// OX_LENGTH_MILLIMETER	(1 mm = 1e-3 m)
-		{0,		1e-6,				0},		// OX_LENGTH_MICROMETER	(1 µm = 1e-6 m)
+		{0,		1e-6,				0},		// OX_LENGTH_MICROMETER	(1 Âµm = 1e-6 m)
 		{0,		1e-9,				0},		// OX_LENGTH_NANOMETER	(1 nm = 1e-9 m)
-		{0,		1e-10,				0},		// OX_LENGTH_ANGSTROM	(1 Å  = 1e-10 m)
+		{0,		1e-10,				0},		// OX_LENGTH_ANGSTROM	(1 Ã…  = 1e-10 m)
 		{0,		2.54e-2,			0},		// OX_LENGTH_INCH		(1 "  = 2.54 * 1e-2 m)
 		{0,		3.527777777778e-4,	0},		// OX_LENGTH_POINT		(1 pt = 2.54 / 72 * 1e-2 m)
 };
@@ -138,15 +138,15 @@ COXLengthEdit::~COXLengthEdit()
 LPCTSTR	COXTempEdit::m_rgpszTempUnitNames[] =
 {
 	_T("K"),			// OX_TEMP_KELVIN	
-	_T("°C"),			// OX_TEMP_CELSIUS		
-	_T("°F"),			// OX_TEMP_FAHRENHEIT	
+	_T("Â°C"),			// OX_TEMP_CELSIUS		
+	_T("Â°F"),			// OX_TEMP_FAHRENHEIT	
 };
 
 COXConversionParams COXTempEdit::m_rgnTempConversionParams[] =
 {
-	{0,		1,			  -273.15},		// OX_TEMP_KELVIN		(K - 273.15 = °C)
-	{0,		1,					0},		// OX_TEMP_CELSIUS		(°C = °C)
-	{-32,	0.5555555555556,	0},		// OX_TEMP_FAHRENHEIT	((°F - 32) * 5/9 = °C)
+	{0,		1,			  -273.15},		// OX_TEMP_KELVIN		(K - 273.15 = Â°C)
+	{0,		1,					0},		// OX_TEMP_CELSIUS		(Â°C = Â°C)
+	{-32,	0.5555555555556,	0},		// OX_TEMP_FAHRENHEIT	((Â°F - 32) * 5/9 = Â°C)
 };
 
 COXConversionData COXTempEdit::m_tempConversionData =
@@ -235,7 +235,7 @@ LPCTSTR	COXTimeEdit::m_rgpszTimeUnitNames[] =
 	_T("h"), 
 	_T("d"),
 	_T("ms"), 
-	_T("µs"), 
+	_T("Âµs"), 
 	_T("ns"), 
 	_T("sec"), 
 };
@@ -247,7 +247,7 @@ COXConversionParams COXTimeEdit::m_rgnTimeConversionParams[] =
 	{0,		3600,			0},		// OX_TIME_HOUR			(1 d = 60 * 60 s)
 	{0,		86400,			0},		// OX_TIME_DAY			(1 d = 24 * 60 * 60 s)
 	{0,		1e-3,			0},		// OX_TIME_MILLISECOND	(1 ms = 1e-3 s)
-	{0,		1e-6,			0},		// OX_TIME_MICROSECOND	(1 µs = 1e-6 s)
+	{0,		1e-6,			0},		// OX_TIME_MICROSECOND	(1 Âµs = 1e-6 s)
 	{0,		1e-9,			0},		// OX_TIME_NANOSECOND	(1 ns = 1e-9 s)
 	{0,		1,				0},		// OX_TIME_SECOND_2		(1 sec = 1 s)
 };
@@ -332,7 +332,7 @@ COXTimeEdit::~COXTimeEdit()
 
 LPCTSTR	COXAngleEdit::m_rgpszAngleUnitNames[] =
 {
-	_T("°"), 
+	_T("Â°"), 
 	_T("rd"), 
 	_T("grad"), 
 	_T("deg"),
@@ -341,11 +341,11 @@ LPCTSTR	COXAngleEdit::m_rgpszAngleUnitNames[] =
 
 COXConversionParams COXAngleEdit::m_rgnAngleConversionParams[] =
 {
-	{0,		1,				0},		// OX_ANGLE_DEGREE		(1 * = 1 °
-	{0,		57.29577951308, 0},		// OX_ANGLE_RADIAN		(1 rd = 180/pi °)
-	{0,		0.9,			0},		// OX_ANGLE_GRAD		(1 grad = 9/10 °)
-	{0,		1,				0},		// OX_ANGLE_DEGREE_2	(1 deg = 1 °
-	{0,		57.29577951308,	0},		// OX_ANGLE_RADIAN_2	(1 rad = 180/pi °)
+	{0,		1,				0},		// OX_ANGLE_DEGREE		(1 * = 1 Â°
+	{0,		57.29577951308, 0},		// OX_ANGLE_RADIAN		(1 rd = 180/pi Â°)
+	{0,		0.9,			0},		// OX_ANGLE_GRAD		(1 grad = 9/10 Â°)
+	{0,		1,				0},		// OX_ANGLE_DEGREE_2	(1 deg = 1 Â°
+	{0,		57.29577951308,	0},		// OX_ANGLE_RADIAN_2	(1 rad = 180/pi Â°)
 };
 
 COXConversionData COXAngleEdit::m_angleConversionData =
