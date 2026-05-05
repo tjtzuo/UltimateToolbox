@@ -197,14 +197,14 @@ protected:
 	BOOL StartNonSynchronizedNotifier(int nMilliDelay, P_OX_TIMER_NOTIFICATION pfTimerNotification, 
 		BOOL bPeriodic, int nMilliAccuracy);
 	static void CALLBACK NonSynchronizedNotificationCallback(UINT uTimerID, UINT uMsg, 
-		DWORD dwUser, DWORD dw1, DWORD dw2);
+		DWORD_PTR dwUser, DWORD_PTR dw1, DWORD_PTR dw2);
 	void OnNonSynchronizedNotification();
 	void StopNonSynchronizedNotifier();
 
 	BOOL StartSynchronizedNotifier(int nMilliDelay, P_OX_TIMER_NOTIFICATION pfTimerNotification, 
 		BOOL bPeriodic, int nMilliAccuracy);
 	static void CALLBACK SynchronizedNotificationCallback(HWND hWnd, UINT uMsg, 
-		UINT nTimerID, DWORD nTime);
+		UINT_PTR nTimerID, DWORD nTime);
 	void OnSynchronizedNotification();
 	void StopSynchronizedNotifier();
 

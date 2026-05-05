@@ -8,6 +8,42 @@
 #define new DEBUG_NEW
 #undef THIS_FILE
 static char THIS_FILE[] = __FILE__;
+static int __cdecl crtReportHookW(int nReportType, wchar_t* wszMsg, int* pnRet)
+{
+	UNREFERENCED_PARAMETER(pnRet);
+	const wchar_t wszTrace[] = L"atlTraceGeneral - ";
+	const int ccTrace = _countof(wszTrace) - 1;	// exclude L'\0'
+	if (nReportType == _CRT_WARN)
+	{
+		wchar_t* pwsz = wcsstr(wszMsg, wszTrace);
+		if (pwsz != nullptr)
+		{
+			size_t ccBuf = wcslen(pwsz) + 1;	// remaining buffer size (include L'\0')
+			wmemmove_s(pwsz, ccBuf, &pwsz[ccTrace], ccBuf - ccTrace);
+			OutputDebugStringW(pwsz);
+			return TRUE;
+		}
+	}
+	return FALSE;	// always keep processing
+}
+static int __cdecl crtReportHook(int nReportType, char* szMsg, int* pnRet)
+{
+	UNREFERENCED_PARAMETER(pnRet);
+	const char szTrace[] = "atlTraceGeneral - ";
+	const int ccTrace = _countof(szTrace) - 1;	// exclude '\0'
+	if (nReportType == _CRT_WARN)
+	{
+		char* psz = strstr(szMsg, szTrace);
+		if (psz != nullptr)
+		{
+			size_t ccBuf = strlen(psz) + 1;		// remaining buffer size (include '\0')
+			memmove_s(psz, ccBuf, &psz[ccTrace], ccBuf - ccTrace);
+			OutputDebugStringA(psz);
+			return TRUE;
+		}
+	}
+	return FALSE;	// always keep processing
+}
 #endif
 
 
@@ -21,6 +57,11 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 
 	if (dwReason == DLL_PROCESS_ATTACH)
 	{
+#ifdef _DEBUG
+		_CrtSetReportHookW2(_CRT_RPTHOOK_INSTALL, crtReportHookW);
+		_CrtSetReportHook2(_CRT_RPTHOOK_INSTALL, crtReportHook);
+#endif
+
 		TRACE0("UT.DLL Initializing!\n");
 		
 		// Extension DLL one-time initialization
@@ -44,6 +85,12 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 	else if (dwReason == DLL_PROCESS_DETACH)
 	{
 		TRACE0("UT.DLL Terminating!\n");
+
+#ifdef _DEBUG
+	_CrtSetReportHookW2(_CRT_RPTHOOK_REMOVE, crtReportHookW);
+	_CrtSetReportHook2(_CRT_RPTHOOK_REMOVE, crtReportHook);
+#endif
+
 		// Terminate the library before destructors are called
 		AfxTermExtensionModule(UTDLL);
 	}

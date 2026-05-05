@@ -49,5 +49,6 @@
 #include "OXShellObjectList.rc"
 #include "OXShellFolderTree.rc"
 #include "OXPropertiesWnd.rc"
+#include "oxsercom.rc"  // SerialComm class components
 #endif //_OXMAIN_RC__
 

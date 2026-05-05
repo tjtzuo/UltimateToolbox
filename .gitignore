@@ -4,7 +4,9 @@ Thumbs.db
 
 #Ignore files built by Visual Studio
 Debug*/
+Unicode[_ ]Debug/
 Release*/
+Unicode[_ ]Release/
 
 # User-specific files
 *.suo
@@ -22,7 +24,7 @@ Release*/
 *.obj
 *.iobj
 *.pch
-*.pdb
+#*.pdb
 *.ipdb
 *.pgc
 *.pgd
@@ -75,3 +77,4 @@ UpgradeLog*.htm
 *.chw
 *.bsc
 *.exp
+*.res

@@ -1,17 +1,17 @@
+
 // UsingDLLDlg.cpp : implementation file
 //
 
 #include "stdafx.h"
 #include "UsingDLL.h"
 #include "UsingDLLDlg.h"
+#include "afxdialogex.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
-#undef THIS_FILE
-static char THIS_FILE[] = __FILE__;
 #endif
 
-/////////////////////////////////////////////////////////////////////////////
+
 // CAboutDlg dialog used for App About
 
 class CAboutDlg : public CDialog
@@ -20,71 +20,54 @@ public:
 	CAboutDlg();
 
 // Dialog Data
-	//{{AFX_DATA(CAboutDlg)
+#ifdef AFX_DESIGN_TIME
 	enum { IDD = IDD_ABOUTBOX };
-	//}}AFX_DATA
+#endif
 
-	// ClassWizard generated virtual function overrides
-	//{{AFX_VIRTUAL(CAboutDlg)
 	protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
-	//}}AFX_VIRTUAL
 
 // Implementation
 protected:
-	//{{AFX_MSG(CAboutDlg)
-	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };
 
-CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD)
+CAboutDlg::CAboutDlg() : CDialog(IDD_ABOUTBOX)
 {
-	//{{AFX_DATA_INIT(CAboutDlg)
-	//}}AFX_DATA_INIT
 }
 
 void CAboutDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
-	//{{AFX_DATA_MAP(CAboutDlg)
-	//}}AFX_DATA_MAP
 }
 
 BEGIN_MESSAGE_MAP(CAboutDlg, CDialog)
-	//{{AFX_MSG_MAP(CAboutDlg)
-		// No message handlers
-	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
-/////////////////////////////////////////////////////////////////////////////
+
 // CUsingDLLDlg dialog
 
+
+
 CUsingDLLDlg::CUsingDLLDlg(CWnd* pParent /*=NULL*/)
-	: CDialog(CUsingDLLDlg::IDD, pParent)
+	: CDialog(IDD_USINGDLL_DIALOG, pParent)
 {
-	//{{AFX_DATA_INIT(CUsingDLLDlg)
-	//}}AFX_DATA_INIT
-	// Note that LoadIcon does not require a subsequent DestroyIcon in Win32
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
 
 void CUsingDLLDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
-	//{{AFX_DATA_MAP(CUsingDLLDlg)
 	DDX_Control(pDX, IDC_STATIC_HYPERLING, m_HyperLink);
-	//}}AFX_DATA_MAP
 }
 
 BEGIN_MESSAGE_MAP(CUsingDLLDlg, CDialog)
-	//{{AFX_MSG_MAP(CUsingDLLDlg)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
-	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
-/////////////////////////////////////////////////////////////////////////////
+
 // CUsingDLLDlg message handlers
 
 BOOL CUsingDLLDlg::OnInitDialog()
@@ -100,8 +83,10 @@ BOOL CUsingDLLDlg::OnInitDialog()
 	CMenu* pSysMenu = GetSystemMenu(FALSE);
 	if (pSysMenu != NULL)
 	{
+		BOOL bNameValid;
 		CString strAboutMenu;
-		strAboutMenu.LoadString(IDS_ABOUTBOX);
+		bNameValid = strAboutMenu.LoadString(IDS_ABOUTBOX);
+		ASSERT(bNameValid);
 		if (!strAboutMenu.IsEmpty())
 		{
 			pSysMenu->AppendMenu(MF_SEPARATOR);
@@ -113,9 +98,9 @@ BOOL CUsingDLLDlg::OnInitDialog()
 	//  when the application's main window is not a dialog
 	SetIcon(m_hIcon, TRUE);			// Set big icon
 	SetIcon(m_hIcon, FALSE);		// Set small icon
-	
+
 	// TODO: Add extra initialization here
-	
+
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
 
@@ -136,13 +121,13 @@ void CUsingDLLDlg::OnSysCommand(UINT nID, LPARAM lParam)
 //  to draw the icon.  For MFC applications using the document/view model,
 //  this is automatically done for you by the framework.
 
-void CUsingDLLDlg::OnPaint() 
+void CUsingDLLDlg::OnPaint()
 {
 	if (IsIconic())
 	{
 		CPaintDC dc(this); // device context for painting
 
-		SendMessage(WM_ICONERASEBKGND, (WPARAM) dc.GetSafeHdc(), 0);
+		SendMessage(WM_ICONERASEBKGND, reinterpret_cast<WPARAM>(dc.GetSafeHdc()), 0);
 
 		// Center icon in client rectangle
 		int cxIcon = GetSystemMetrics(SM_CXICON);
@@ -161,9 +146,10 @@ void CUsingDLLDlg::OnPaint()
 	}
 }
 
-// The system calls this to obtain the cursor to display while the user drags
+// The system calls this function to obtain the cursor to display while the user drags
 //  the minimized window.
 HCURSOR CUsingDLLDlg::OnQueryDragIcon()
 {
-	return (HCURSOR) m_hIcon;
+	return static_cast<HCURSOR>(m_hIcon);
 }
+

@@ -1,0 +1,912 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugUnicode|Win32">
+      <Configuration>DebugUnicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugUnicode|x64">
+      <Configuration>DebugUnicode</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseUnicode|Win32">
+      <Configuration>ReleaseUnicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseUnicode|x64">
+      <Configuration>ReleaseUnicode</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>UT</ProjectName>
+    <ProjectGuid>{23278716-3EC4-4FBC-A416-3A42BD376A2E}</ProjectGuid>
+    <RootNamespace>UT</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'">
+    <OutDir>..\DLLs\</OutDir>
+    <IntDir>.\ReleaseU\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>UTU</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|x64'">
+    <OutDir>..\DLLs\$(Platform)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>UTU</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\DLLs\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>UT</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\DLLs\$(Platform)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>UT</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'">
+    <OutDir>..\DLLs\</OutDir>
+    <IntDir>.\DebugU\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>UTDU</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|x64'">
+    <OutDir>..\DLLs\$(Platform)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>UTDU</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\DLLs\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>UTD</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\DLLs\$(Platform)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>UTD</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\ReleaseU/UT.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXEXT;_BUILD_UTB_INTO_EXTDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\ReleaseU/UT.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\ReleaseU/</AssemblerListingLocation>
+      <ObjectFileName>.\ReleaseU/</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseU/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x1009</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\Lib\libs\jpgr.lib;..\..\Lib\libs\cpuinfr.lib;version.lib;mapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>.\ReleaseU/UTU.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>..\DLLs/UTU.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseU/UT.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\ReleaseU/UT.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXEXT;_BUILD_UTB_INTO_EXTDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x1009</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>jpgr.lib;version.lib;mapi32.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCMT</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalLibraryDirectories>..\..\Lib\libs\$(Platform)</AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseU/UT.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/UT.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXEXT;_BUILD_UTB_INTO_EXTDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/UT.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x1009</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\Lib\libs\jpgr.lib;..\..\Lib\libs\cpuinfr.lib;version.lib;mapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>.\Release/UT.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>..\DLLs/UT.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/UT.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release/UT.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXEXT;_BUILD_UTB_INTO_EXTDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x1009</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>jpgr.lib;version.lib;mapi32.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBC;LIBCMT</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalLibraryDirectories>..\..\Lib\libs\$(Platform)</AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/UT.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\DebugU/UT.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXEXT;_BUILD_UTB_INTO_EXTDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\DebugU/UT.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\DebugU/</AssemblerListingLocation>
+      <ObjectFileName>.\DebugU/</ObjectFileName>
+      <ProgramDataBaseFileName>.\DebugU/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x1009</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\Lib\libs\jpgd.lib;..\..\Lib\libs\cpuinfd.lib;version.lib;mapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>LIBCD;LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\DebugU/UTDU.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>..\DLLs/UTDU.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\DebugU/UT.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\DebugU/UT.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXEXT;_BUILD_UTB_INTO_EXTDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x1009</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>jpgd.lib;version.lib;mapi32.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>LIBCD;LIBCMTD</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalLibraryDirectories>..\..\Lib\libs\$(Platform)</AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\DebugU/UT.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/UT.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXEXT;_BUILD_UTB_INTO_EXTDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/UT.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x1009</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\Lib\libs\jpgd.lib;..\..\Lib\libs\cpuinfd.lib;version.lib;mapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>LIBCD;LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/UTD.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>..\DLLs/UTD.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/UT.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Debug/UT.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;..\..\Lib\Processor\Intel\CPUINF32</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXEXT;_BUILD_UTB_INTO_EXTDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x1009</Culture>
+      <AdditionalIncludeDirectories>..\..\Include;..\..\Lib\Jpeg;..\..\Lib\Jpeg\Jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>jpgd.lib;version.lib;mapi32.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>LIBCD;LIBCMTD</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalLibraryDirectories>..\..\Lib\libs\$(Platform)</AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/UT.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\CONVFILE.CPP" />
+    <ClCompile Include="..\..\source\COPYTREE.CPP" />
+    <ClCompile Include="..\..\source\CPYSTDLG.CPP" />
+    <ClCompile Include="..\..\source\DIR.CPP" />
+    <ClCompile Include="..\..\source\DIRLIST.CPP" />
+    <ClCompile Include="..\..\source\DSTRLIST.CPP" />
+    <ClCompile Include="..\..\source\EVNTLOG.CPP" />
+    <ClCompile Include="..\..\source\FILE.CPP" />
+    <ClCompile Include="..\..\source\FILELIST.CPP" />
+    <ClCompile Include="..\..\source\MDELDLG.CPP" />
+    <ClCompile Include="..\..\source\MFCToolBar.cpp" />
+    <ClCompile Include="..\..\source\OX3DTabView.cpp" />
+    <ClCompile Include="..\..\source\OXActiveDesktop.cpp" />
+    <ClCompile Include="..\..\source\OXAdvancedAssert.cpp" />
+    <ClCompile Include="..\..\source\OXAdvancedAssertMail.cpp" />
+    <ClCompile Include="..\..\source\OXAppBar.cpp" />
+    <ClCompile Include="..\..\source\OXAutoComplete.cpp" />
+    <ClCompile Include="..\..\source\OXAutoListBox.cpp" />
+    <ClCompile Include="..\..\source\OXBackgroundPainter.cpp" />
+    <ClCompile Include="..\..\source\OXBITBUF.CPP" />
+    <ClCompile Include="..\..\source\OXBitmapButton.cpp" />
+    <ClCompile Include="..\..\source\OXBitmapMenu.cpp" />
+    <ClCompile Include="..\..\source\OXBitmapMenuOrganizer.cpp" />
+    <ClCompile Include="..\..\source\OXBlob.cpp" />
+    <ClCompile Include="..\..\source\OXBMPFilePickerCombo.cpp" />
+    <ClCompile Include="..\..\source\OXBMPFle.cpp" />
+    <ClCompile Include="..\..\source\OXBrowseColorEdit.cpp" />
+    <ClCompile Include="..\..\source\OXBrowseDirEdit.cpp" />
+    <ClCompile Include="..\..\source\OXBrowseDirEditList.cpp" />
+    <ClCompile Include="..\..\source\OXButtonAppearanceDlg.cpp" />
+    <ClCompile Include="..\..\source\OXCalculatorCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXCalculatorEdit.cpp" />
+    <ClCompile Include="..\..\source\OXCalendar.cpp" />
+    <ClCompile Include="..\..\source\OXCalendarEdit.cpp" />
+    <ClCompile Include="..\..\source\OXCalendarPopup.cpp" />
+    <ClCompile Include="..\..\source\OXCaptionPainter.cpp" />
+    <ClCompile Include="..\..\source\OXChildFrameState.cpp" />
+    <ClCompile Include="..\..\source\OXClipPocket.cpp" />
+    <ClCompile Include="..\..\source\OXCmdlEx.cpp" />
+    <ClCompile Include="..\..\source\OXCmdLne.cpp" />
+    <ClCompile Include="..\..\source\OXCmdOpd.cpp" />
+    <ClCompile Include="..\..\source\OXCmdOpt.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\source\OXCMPFL.CPP" />
+    <ClCompile Include="..\..\source\OXColorPickerButton.cpp" />
+    <ClCompile Include="..\..\source\OXColorPickerCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXComboPickerCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXCommMsg.cpp" />
+    <ClCompile Include="..\..\source\OXCommunicator.cpp" />
+    <ClCompile Include="..\..\source\OXCOMPR.CPP" />
+    <ClCompile Include="..\..\source\OXContextHelpDialog.cpp" />
+    <ClCompile Include="..\..\source\OXContextHelpPropertyPage.cpp" />
+    <ClCompile Include="..\..\source\OXContextHelpPropertySheet.cpp" />
+    <ClCompile Include="..\..\source\OXCoolBar.cpp" />
+    <ClCompile Include="..\..\source\OXCoolComboBox.cpp" />
+    <ClCompile Include="..\..\source\OXCoolControlOrganizer.cpp" />
+    <ClCompile Include="..\..\source\OXCoolCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXCoolToolBar.cpp" />
+    <ClCompile Include="..\..\source\OXCRCChk.CPP" />
+    <ClCompile Include="..\..\source\OXCsvFile.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeBackgroundPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeCaptionPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeCommandsPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeCoolControlsPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeInstanceManagerPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeIntelliMousePage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeManager.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizePage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeShortkeysPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeSplashWindowPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeTabbedMDIPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeToolbarsPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeTrayIconPage.cpp" />
+    <ClCompile Include="..\..\source\OXCustomizeWorkspaceStatePage.cpp" />
+    <ClCompile Include="..\..\source\OXDao.cpp" />
+    <ClCompile Include="..\..\source\OXDateTimeCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXDckPPg.cpp" />
+    <ClCompile Include="..\..\source\OXDckPSh.cpp" />
+    <ClCompile Include="..\..\source\OXDFlHdr.cpp" />
+    <ClCompile Include="..\..\source\Oxdib.cpp" />
+    <ClCompile Include="..\..\source\OXDirDlg.cpp" />
+    <ClCompile Include="..\..\source\OXDlgBar.cpp" />
+    <ClCompile Include="..\..\source\OXDLLManager.cpp" />
+    <ClCompile Include="..\..\source\oxdocktabctrl.cpp" />
+    <ClCompile Include="..\..\source\OXDocTemplateSpy.cpp" />
+    <ClCompile Include="..\..\source\OXDragDockContext.CPP" />
+    <ClCompile Include="..\..\source\OXDragDropCommands.cpp" />
+    <ClCompile Include="..\..\source\OXEdit.cpp" />
+    <ClCompile Include="..\..\source\OXEditList.cpp" />
+    <ClCompile Include="..\..\source\OXFileChanger.cpp" />
+    <ClCompile Include="..\..\source\OXFileWatcher.cpp" />
+    <ClCompile Include="..\..\source\OXFileWatchNotifier.cpp" />
+    <ClCompile Include="..\..\source\OXFolderPickerDlg.cpp" />
+    <ClCompile Include="..\..\source\OXFontComboBox.cpp" />
+    <ClCompile Include="..\..\source\OXFontPickerButton.cpp" />
+    <ClCompile Include="..\..\source\OXFrameWndDock.CPP" />
+    <ClCompile Include="..\..\source\OXFullScreenFrame.cpp" />
+    <ClCompile Include="..\..\source\OXGphFle.cpp" />
+    <ClCompile Include="..\..\source\OXGraphics.cpp" />
+    <ClCompile Include="..\..\source\oxgridedit.cpp" />
+    <ClCompile Include="..\..\source\OXGridHdr.cpp" />
+    <ClCompile Include="..\..\source\OXGridList.cpp" />
+    <ClCompile Include="..\..\source\OXHashTable.cpp" />
+    <ClCompile Include="..\..\source\OXHistoryCombo.cpp" />
+    <ClCompile Include="..\..\source\OXHistoryCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXHookWnd.cpp" />
+    <ClCompile Include="..\..\source\OXHTMLParser.cpp" />
+    <ClCompile Include="..\..\source\OXHyperbar.cpp" />
+    <ClCompile Include="..\..\source\OXHyperBarOverlay.cpp" />
+    <ClCompile Include="..\..\source\OXHyperBarRender.cpp" />
+    <ClCompile Include="..\..\source\OXHyperFrameWnd.cpp" />
+    <ClCompile Include="..\..\source\OXHyperLinkAction.cpp" />
+    <ClCompile Include="..\..\source\OXImageListBox.cpp" />
+    <ClCompile Include="..\..\source\OXImageViewer.cpp" />
+    <ClCompile Include="..\..\source\OXInstanceManager.cpp" />
+    <ClCompile Include="..\..\source\OXInteger.cpp" />
+    <ClCompile Include="..\..\source\OXIntelliMouse.cpp" />
+    <ClCompile Include="..\..\source\OXIPEdit.cpp" />
+    <ClCompile Include="..\..\source\OXItemTip.cpp" />
+    <ClCompile Include="..\..\source\OXItemTipWnd.cpp" />
+    <ClCompile Include="..\..\source\OXIteratorRegistryItem.cpp" />
+    <ClCompile Include="..\..\source\OXIteratorService.cpp" />
+    <ClCompile Include="..\..\source\OXIteratorUNC.cpp" />
+    <ClCompile Include="..\..\source\OXJPGCod.cpp" />
+    <ClCompile Include="..\..\source\OXJPGCom.cpp" />
+    <ClCompile Include="..\..\source\OXJPGDom.cpp" />
+    <ClCompile Include="..\..\source\OXJPGExp.cpp" />
+    <ClCompile Include="..\..\source\OXJPGFle.cpp" />
+    <ClCompile Include="..\..\source\OXLayoutManager.cpp" />
+    <ClCompile Include="..\..\source\OXListBoxEx.cpp" />
+    <ClCompile Include="..\..\source\OXListEdit.cpp" />
+    <ClCompile Include="..\..\source\OXMaskedEdit.cpp" />
+    <ClCompile Include="..\..\source\OXMDIFloatWnd.cpp" />
+    <ClCompile Include="..\..\source\OXMenuBar.cpp" />
+    <ClCompile Include="..\..\source\OXMetaFile.cpp" />
+    <ClCompile Include="..\..\source\OXMetafileViewer.cpp" />
+    <ClCompile Include="..\..\source\OXMonthCalCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXMulticlipboardDlg.cpp" />
+    <ClCompile Include="..\..\source\OXMultiComboBox.cpp" />
+    <ClCompile Include="..\..\source\OXNetBrowseTree.cpp" />
+    <ClCompile Include="..\..\source\OXNotesEditView.cpp" />
+    <ClCompile Include="..\..\source\OXOptionTreeCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXParser.cpp" />
+    <ClCompile Include="..\..\source\OXPhysicalEdit.cpp" />
+    <ClCompile Include="..\..\source\OXPhysicalEditEx.cpp" />
+    <ClCompile Include="..\..\source\OXPopupBarCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXPreviewDialog.cpp" />
+    <ClCompile Include="..\..\source\OXProcess.cpp" />
+    <ClCompile Include="..\..\source\OXPropertiesWnd.cpp" />
+    <ClCompile Include="..\..\source\OXPropertyDescriptionPane.cpp" />
+    <ClCompile Include="..\..\source\OXPropertyTree.cpp" />
+    <ClCompile Include="..\..\source\OXQuickString.cpp" />
+    <ClCompile Include="..\..\source\OXRectTracker.cpp" />
+    <ClCompile Include="..\..\source\OXRegExpression.cpp" />
+    <ClCompile Include="..\..\source\OXRegistryItem.cpp" />
+    <ClCompile Include="..\..\source\OXRegistryValFile.cpp" />
+    <ClCompile Include="..\..\source\OXRegistryWatcher.cpp" />
+    <ClCompile Include="..\..\source\OXRegistryWatchNotifier.cpp" />
+    <ClCompile Include="..\..\source\OXResourceFile.cpp" />
+    <ClCompile Include="..\..\source\OXResourceLibrary.cpp" />
+    <ClCompile Include="..\..\source\OXRollup.CPP" />
+    <ClCompile Include="..\..\source\OXRoundedButton.cpp" />
+    <ClCompile Include="..\..\source\OXRulerOrganizer.cpp" />
+    <ClCompile Include="..\..\source\OXSCCFG.CPP" />
+    <ClCompile Include="..\..\source\OXSCEXCP.CPP" />
+    <ClCompile Include="..\..\source\OXSCFILE.CPP" />
+    <ClCompile Include="..\..\source\OXScreenGrab.cpp" />
+    <ClCompile Include="..\..\source\OXScript.cpp" />
+    <ClCompile Include="..\..\source\OXScrollTip.cpp" />
+    <ClCompile Include="..\..\source\OXScrollTipOwner.cpp" />
+    <ClCompile Include="..\..\source\OXScrollWnd.cpp" />
+    <ClCompile Include="..\..\source\OXSCSTP.CPP" />
+    <ClCompile Include="..\..\source\OXSeparator.cpp" />
+    <ClCompile Include="..\..\source\OXService.cpp" />
+    <ClCompile Include="..\..\source\OXShape.cpp" />
+    <ClCompile Include="..\..\source\OXShdWnd.cpp" />
+    <ClCompile Include="..\..\source\OXShellFolderTree.cpp" />
+    <ClCompile Include="..\..\source\OXShellNamespaceNavigator.cpp" />
+    <ClCompile Include="..\..\source\OXShellObjectList.cpp" />
+    <ClCompile Include="..\..\source\OXShortcut.cpp" />
+    <ClCompile Include="..\..\source\OXShortcutBar.cpp" />
+    <ClCompile Include="..\..\source\OXShortkeysOrganizer.cpp" />
+    <ClCompile Include="..\..\source\OXSizeCtrlBar.CPP" />
+    <ClCompile Include="..\..\source\OXSizeDlgBar.cpp" />
+    <ClCompile Include="..\..\source\OXSizeDockBar.cpp" />
+    <ClCompile Include="..\..\source\OXSizeToolBar.cpp" />
+    <ClCompile Include="..\..\source\OXSkinnedComboBox.cpp" />
+    <ClCompile Include="..\..\source\OXSkinnedSpinCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXSkinnedTabCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXSkins.cpp" />
+    <ClCompile Include="..\..\source\OXSound.cpp" />
+    <ClCompile Include="..\..\source\OXSoundCustomizeDlg.cpp" />
+    <ClCompile Include="..\..\source\OXSoundEffectManager.cpp" />
+    <ClCompile Include="..\..\source\OXSoundWnd.cpp" />
+    <ClCompile Include="..\..\source\OXSpinCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXSplashWnd.cpp" />
+    <ClCompile Include="..\..\source\OXSplashWndDIB.cpp" />
+    <ClCompile Include="..\..\source\OXSplitterColRowState.cpp" />
+    <ClCompile Include="..\..\source\OXSplitterRect.cpp" />
+    <ClCompile Include="..\..\source\OXSplitterWnd.cpp" />
+    <ClCompile Include="..\..\source\OXSRLZR.CPP" />
+    <ClCompile Include="..\..\source\OXStatic.cpp" />
+    <ClCompile Include="..\..\source\OXStaticHyperLink.cpp" />
+    <ClCompile Include="..\..\source\OXStaticMenuItem.cpp" />
+    <ClCompile Include="..\..\source\OXStaticText.cpp" />
+    <ClCompile Include="..\..\source\OXSysInfo.cpp" />
+    <ClCompile Include="..\..\source\OXSzMiniDockFrmWnd.cpp" />
+    <ClCompile Include="..\..\source\OXTabClientWnd.cpp" />
+    <ClCompile Include="..\..\source\OXTabView.cpp" />
+    <ClCompile Include="..\..\source\OXTaskbarIcon.cpp" />
+    <ClCompile Include="..\..\source\OXTimer.cpp" />
+    <ClCompile Include="..\..\source\OXTleBar.CPP" />
+    <ClCompile Include="..\..\source\OXToolTipCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXTrace.cpp" />
+    <ClCompile Include="..\..\source\OXTreeCal.cpp" />
+    <ClCompile Include="..\..\source\OXTreeCombo.cpp" />
+    <ClCompile Include="..\..\source\OXTreeCtrl.cpp" />
+    <ClCompile Include="..\..\source\OXTreeEdit.cpp" />
+    <ClCompile Include="..\..\source\OXTreeHeader.cpp" />
+    <ClCompile Include="..\..\source\OXTreeItem.cpp" />
+    <ClCompile Include="..\..\source\OXUNC.cpp" />
+    <ClCompile Include="..\..\source\OXUNCStandardActor.cpp" />
+    <ClCompile Include="..\..\source\OXURL.cpp" />
+    <ClCompile Include="..\..\source\OXUsertl.cpp" />
+    <ClCompile Include="..\..\source\OXUUDec.cpp" />
+    <ClCompile Include="..\..\source\OXUxTheme.cpp" />
+    <ClCompile Include="..\..\source\OXVariant.cpp" />
+    <ClCompile Include="..\..\source\OXVerinfo.cpp" />
+    <ClCompile Include="..\..\source\OXWatchedDir.cpp" />
+    <ClCompile Include="..\..\source\oxwebctrl.cpp" />
+    <ClCompile Include="..\..\source\OXWebView.cpp" />
+    <ClCompile Include="..\..\source\OXWorkspaceState.cpp" />
+    <ClCompile Include="..\..\source\Oxzoomvw.cpp" />
+    <ClCompile Include="..\..\source\Path.cpp" />
+    <ClCompile Include="..\..\source\PATHITER.CPP" />
+    <ClCompile Include="..\..\source\PROGRESS.CPP" />
+    <ClCompile Include="..\..\source\UTBStrOp.cpp" />
+    <ClCompile Include="..\..\source\WATCHBUF.CPP" />
+    <ClCompile Include="..\..\source\Xstatus4.cpp" />
+    <ClCompile Include="..\..\source\XSTRING.CPP" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UT.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\OXMainRes.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\include\res\bkgnd_painter.bmp" />
+    <Image Include="..\..\include\res\caption.bmp" />
+    <Image Include="..\..\include\res\commands.bmp" />
+    <Image Include="..\..\include\res\command_group.ico" />
+    <Image Include="..\..\include\res\coolcontrols.bmp" />
+    <Image Include="..\..\include\res\custom_button.ico" />
+    <Image Include="..\..\include\res\il_fonttype.bmp" />
+    <Image Include="..\..\include\res\il_oxcustomize_custom_images.bmp" />
+    <Image Include="..\..\include\res\instance_manager.bmp" />
+    <Image Include="..\..\include\res\intellitarget.bmp" />
+    <Image Include="..\..\include\res\new_popup_menu.ico" />
+    <Image Include="..\..\include\res\noimage.ico" />
+    <Image Include="..\..\include\res\oxcustcoolcontrols_controls.bmp" />
+    <Image Include="..\..\include\res\oxcustom.bmp" />
+    <Image Include="..\..\include\res\oxcusttabmdi_appearance.bmp" />
+    <Image Include="..\..\include\res\oxcusttabmdi_display.bmp" />
+    <Image Include="..\..\include\res\oxcusttabmdi_orient.bmp" />
+    <Image Include="..\..\include\res\oxcusttabmdi_positioning.bmp" />
+    <Image Include="..\..\include\res\oxcusttabmdi_settings.bmp" />
+    <Image Include="..\..\include\res\OXEditListImg.bmp" />
+    <Image Include="..\..\include\res\OXGridListImg.bmp" />
+    <Image Include="..\..\include\res\OXHistoryComboImg.bmp" />
+    <Image Include="..\..\include\res\OXMulticlipboardDlg.bmp" />
+    <Image Include="..\..\include\res\OXNetBrowseTreeImg.bmp" />
+    <Image Include="..\..\include\res\OXNotesBkmarks.bmp" />
+    <Image Include="..\..\include\res\OXNotesBrush.bmp" />
+    <Image Include="..\..\include\res\oxoption.bmp" />
+    <Image Include="..\..\include\res\OXOptionHighContrast.bmp" />
+    <Image Include="..\..\include\res\oxpreviewbtn.bmp" />
+    <Image Include="..\..\include\RES\OXRUpBar.bmp" />
+    <Image Include="..\..\include\res\properti.bmp" />
+    <Image Include="..\..\include\res\properties_toolbar.bmp" />
+    <Image Include="..\..\include\res\separator.ico" />
+    <Image Include="..\..\include\res\shortkeys.bmp" />
+    <Image Include="..\..\include\res\sndplay.bmp" />
+    <Image Include="..\..\include\res\sndstop.bmp" />
+    <Image Include="..\..\include\res\splashwindow.bmp" />
+    <Image Include="..\..\include\res\tabbedmdi.bmp" />
+    <Image Include="..\..\include\res\toolbars.bmp" />
+    <Image Include="..\..\include\res\trayicon.bmp" />
+    <Image Include="..\..\include\res\treelist.bmp" />
+    <Image Include="..\..\include\res\workspace_state.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\include\res\OXHandCursor.cur" />
+    <None Include="..\..\include\res\OXNoHandCursor.cur" />
+    <None Include="..\..\include\res\OXNotes.cur" />
+    <None Include="..\..\include\res\OXSpinHor.cur" />
+    <None Include="..\..\include\res\OXSpinVer.cur" />
+    <None Include="..\..\include\res\oxtbcopy.cur" />
+    <None Include="..\..\include\res\oxtbmove.cur" />
+    <None Include="..\..\include\res\oxtbremove.cur" />
+    <None Include="..\..\include\res\scrl_all.cur" />
+    <None Include="..\..\include\res\scrl_bottomleft.cur" />
+    <None Include="..\..\include\res\scrl_bottomright.cur" />
+    <None Include="..\..\include\res\scrl_down.cur" />
+    <None Include="..\..\include\res\scrl_left.cur" />
+    <None Include="..\..\include\res\scrl_leftright.cur" />
+    <None Include="..\..\include\res\scrl_right.cur" />
+    <None Include="..\..\include\res\scrl_topbottom.cur" />
+    <None Include="..\..\include\res\scrl_topleft.cur" />
+    <None Include="..\..\include\res\scrl_topright.cur" />
+    <None Include="..\..\include\res\scrl_up.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\include\OXMain.rc" />
+    <ResourceCompile Include="UT.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|x64'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|x64'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

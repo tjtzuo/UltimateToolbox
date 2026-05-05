@@ -1,11 +1,11 @@
-// ==========================================================================
+﻿// ==========================================================================
 //				Class Implementation : COXTimer
 // ==========================================================================
 
 // Source file : OXTimer.cpp
 
 // This software along with its related components, documentation and files ("The Libraries")
-// is(c)1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -252,7 +252,7 @@ BOOL COXTimer::StartNonSynchronizedNotifier(int nMilliDelay, P_OX_TIMER_NOTIFICA
 	return (m_nNonSynchronizedTimerNotifierID != 0);
 	}
 
-void CALLBACK COXTimer::NonSynchronizedNotificationCallback(UINT /* uTimerID */, UINT /* uMsg */, DWORD dwUser, DWORD /* dw1 */, DWORD /* dw2 */)
+void CALLBACK COXTimer::NonSynchronizedNotificationCallback(UINT /* uTimerID */, UINT /* uMsg */, DWORD_PTR dwUser, DWORD_PTR /* dw1 */, DWORD_PTR /* dw2 */)
 	// --- In  : uTimerID : The timer ID
 	//			 uMsg : 
 	//			 dwUser : The user data
@@ -353,7 +353,7 @@ BOOL COXTimer::StartSynchronizedNotifier(int nMilliDelay, P_OX_TIMER_NOTIFICATIO
 
 void CALLBACK COXTimer::SynchronizedNotificationCallback(HWND /*hWnd*/, 
 														 UINT /*uMsg*/, 
-														 UINT nTimerID, 
+														 UINT_PTR nTimerID, 
 														 DWORD /*nTime*/)
 	// --- In  : hWnd : 
 	//			 uMsg :
