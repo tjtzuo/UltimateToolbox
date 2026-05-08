@@ -83,8 +83,8 @@ BOOL CParserViewDoc::OnOpenDocument(LPCTSTR lpszPathName)
     SetPathName(lpszPathName);
 
 #ifdef _UNICODE
-	USES_CONVERSION
-    LPTSTR ptr = (LPTSTR)wcsrchr(A2W(lpszPathName), TCHAR('.'));
+	USES_CONVERSION;
+    LPTSTR ptr = (LPTSTR)wcsrchr(/*A2W*/(lpszPathName), TCHAR('.'));
 #else
     LPTSTR ptr = (LPTSTR)strrchr(lpszPathName, TCHAR('.'));
 #endif

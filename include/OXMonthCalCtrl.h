@@ -1,11 +1,11 @@
-// ==========================================================================
+ï»¿// ==========================================================================
 // 					Class Specification : COXMonthCalCtrl
 // ==========================================================================
 
 // Version: 9.3
 
 // This software along with its related components, documentation and files ("The Libraries")
-// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is Â© 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -872,7 +872,7 @@ public:
 	//									location of the month calendar control. 
 	//				pParentWnd		-	A pointer to a CWnd object that is the parent window 
 	//									of the month calendar control. It must not be NULL.
-	//				nID				-	Specifies the month calendar control’s control ID.
+	//				nID				-	Specifies the month calendar controlâ€™s control ID.
 	//				dwMonthCalStyle	-	COXMonthCalendar control specific styles. The 
 	//									following are the specific styles used with month 
 	//									calendar controls: 

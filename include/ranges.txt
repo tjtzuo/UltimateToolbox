@@ -3,13 +3,13 @@ for resources, commands, strings, controls, and child windows.
 
 The Problem
 The MFC ID naming and numbering conventions are intended to meet the following requirements:
-·	Provide a consistent ID-naming standard used across the MFC library
+Â·	Provide a consistent ID-naming standard used across the MFC library
 	and MFC applications that are supported by the Visual C++ resource editor.
 	This allows the programmer to more readily interpret IDs as to their type and origin.
-·	Emphasize the strong 1-to-1 relationship between certain types of IDs. This helps to
+Â·	Emphasize the strong 1-to-1 relationship between certain types of IDs. This helps to
 	clarify MFC's application framework architecture.
-·	Conform to already widely used standards for naming IDs in Windows.
-·	Partition the ID-numbering space, so as to avoid unintentional duplication of ID numbers
+Â·	Conform to already widely used standards for naming IDs in Windows.
+Â·	Partition the ID-numbering space, so as to avoid unintentional duplication of ID numbers
 	among those assigned by the programmer, by MFC and Windows, and by Visual C++-edited resources.
   
 Overview of ID Prefix Naming Convention
@@ -86,14 +86,14 @@ common convention starts practical use of IDs at 100 or 101.
 
 Reasons for these range limits:
 
-	·	By convention, the ID value of 0 is not used.
-	·	Windows implementation limitations restrict true resource IDs to be less than or equal
+	Â·	By convention, the ID value of 0 is not used.
+	Â·	Windows implementation limitations restrict true resource IDs to be less than or equal
 		to 0x7FFF.
-	·	MFC's internal framework implementations reserve several ranges:
+	Â·	MFC's internal framework implementations reserve several ranges:
 		0xE000->0xEFFF and 0x7000->0x7FFF.
-	·	Several Windows system commands use the range of 0xF000 -> 0xFFFF.
-	·	Control IDs of 1->7 are reserved by IDOK, IDCANCEL, and so on.
-	·	The range of 0x8000->0xFFFF for strings is reserved for menu prompts for commands.
+	Â·	Several Windows system commands use the range of 0xF000 -> 0xFFFF.
+	Â·	Control IDs of 1->7 are reserved by IDOK, IDCANCEL, and so on.
+	Â·	The range of 0x8000->0xFFFF for strings is reserved for menu prompts for commands.
 
 
 

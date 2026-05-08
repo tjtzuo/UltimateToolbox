@@ -1,4 +1,4 @@
-// ==========================================================================
+ï»¿// ==========================================================================
 //			Class Specification: COXCustomizePage
 // ==========================================================================
 
@@ -7,7 +7,7 @@
 // Version: 9.3
 
 // This software along with its related components, documentation and files ("The Libraries")
-// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is Â© 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -240,7 +240,7 @@ public:
 	//										the name of a page template resource
 	//				pParentWnd			-	points to the parent window object (of 
 	//										type CWnd) to which the page object 
-	//										belongs. If it is NULL, the page object’s 
+	//										belongs. If it is NULL, the page objectâ€™s 
 	//										parent window is set to the main 
 	//										application window
 	//				rect				-	the size and position of the page, 

@@ -1,4 +1,4 @@
-// ==========================================================================
+ï»¿// ==========================================================================
 // 				Class Specification : COXTimeEdit, COXAngleEdit,
 //									  COXLengthEdit, COXTempEdit
 // ==========================================================================
@@ -8,7 +8,7 @@
 // Version: 9.3
 
 // This software along with its related components, documentation and files ("The Libraries")
-// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is Â© 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -74,9 +74,9 @@
 #define OX_LENGTH_DECIMETER		(2)			// dm	(= 1e-1 m)
 #define OX_LENGTH_CENTIMETER	(3)			// cm	(= 1e-2 m)
 #define OX_LENGTH_MILLIMETER	(4)			// mm	(= 1e-3 m)
-#define OX_LENGTH_MICROMETER	(5)			// µm	(= 1e-6 m)
+#define OX_LENGTH_MICROMETER	(5)			// Âµm	(= 1e-6 m)
 #define OX_LENGTH_NANOMETER		(6)			// nm	(= 1e-9 m)
-#define OX_LENGTH_ANGSTROM		(7)			// Å	(= 1e-10 m)
+#define OX_LENGTH_ANGSTROM		(7)			// Ã…	(= 1e-10 m)
 #define OX_LENGTH_INCH			(8)			// "	(= 2.54 * 1e-2 m)
 #define OX_LENGTH_POINT			(9)			// pt	(= 2.54 / 72 * 1e-2 m)
 
@@ -162,9 +162,9 @@ private:
 /////////////////////////////////////////////////////////////////////////////
 // COXTempEdit window
 
-#define OX_TEMP_KELVIN			(0)			// K	(K - 273.15 = °C)
-#define OX_TEMP_CELSIUS			(1)			// °C   (°C = °C)
-#define OX_TEMP_FAHRENHEIT		(2)			// °F	((°F - 32) * 5/9 = °C)
+#define OX_TEMP_KELVIN			(0)			// K	(K - 273.15 = Â°C)
+#define OX_TEMP_CELSIUS			(1)			// Â°C   (Â°C = Â°C)
+#define OX_TEMP_FAHRENHEIT		(2)			// Â°F	((Â°F - 32) * 5/9 = Â°C)
 
 #define OX_TEMP_FIRST			OX_TEMP_KELVIN
 #define OX_TEMP_LAST			OX_TEMP_FAHRENHEIT
@@ -248,7 +248,7 @@ private:
 #define OX_TIME_HOUR			(2)			// h	(= 60 * 60 s)
 #define OX_TIME_DAY				(3)			// d	(= 24 * 60 * 60 s)
 #define OX_TIME_MILLISECOND		(4)			// ms	(= 1e-3 s)
-#define OX_TIME_MICROSECOND		(5)			// µs	(= 1e-6 s)
+#define OX_TIME_MICROSECOND		(5)			// Âµs	(= 1e-6 s)
 #define OX_TIME_NANOSECOND		(6)			// ns	(= 1e-9 s)
 #define OX_TIME_SECOND_2		(7)			// sec	(= 1 s)
 
@@ -329,11 +329,11 @@ protected:
 /////////////////////////////////////////////////////////////////////////////
 // COXAngleEdit window
 
-#define OX_ANGLE_DEGREE			(0)			// °	(= 1 °)
-#define OX_ANGLE_RADIAN			(1)			// rd   (= 180/pi °)
-#define OX_ANGLE_GRAD			(2)			// grad	(= 9/10 °)
-#define OX_ANGLE_DEGREE_2		(3)			// deg	(= 1 °)
-#define OX_ANGLE_RADIAN_2		(4)			// rad  (= 180/pi °)
+#define OX_ANGLE_DEGREE			(0)			// Â°	(= 1 Â°)
+#define OX_ANGLE_RADIAN			(1)			// rd   (= 180/pi Â°)
+#define OX_ANGLE_GRAD			(2)			// grad	(= 9/10 Â°)
+#define OX_ANGLE_DEGREE_2		(3)			// deg	(= 1 Â°)
+#define OX_ANGLE_RADIAN_2		(4)			// rad  (= 180/pi Â°)
 
 #define OX_ANGLE_FIRST			OX_ANGLE_DEGREE
 #define OX_ANGLE_LAST			OX_ANGLE_RADIAN_2

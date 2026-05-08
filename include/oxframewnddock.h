@@ -1,4 +1,4 @@
-// ===================================================================================
+ï»¿// ===================================================================================
 // 							Class Specification :
 //		COXFrameWndSizeDock & COXMDIFrameWndSizeDock & COXMDIChildWndSizeDock
 //				COXSizeViewBar & COXSizeBarWrapper & COXDockDocument
@@ -9,7 +9,7 @@
 // Version: 9.3
 
 // This software along with its related components, documentation and files ("The Libraries")
-// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is Â© 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -269,20 +269,20 @@ public:
 	// --- Out : 
 	// --- Returns : 
 	// --- Effect : Loads the saved state of the bars from the Registry/ini, including sizes.
-	//				This function calls CFrameWnd::LoadBarState() to do most of it’s work. 
+	//				This function calls CFrameWnd::LoadBarState() to do most of itâ€™s work. 
 	void LoadSizeBarState(LPCTSTR pszProfileName);
 
 	// --- In  : pszProfileName : specifies the key to use within the registry/ini.
 	// --- Out : 
 	// --- Returns : 
 	// --- Effect : Saves the state of the bars to the Registry/ini, including sizes.
-	//				This function calls CFrameWnd::SaveBarState() to do most of it’s work. 
+	//				This function calls CFrameWnd::SaveBarState() to do most of itâ€™s work. 
 	//				Notes:
 	//					1. This function destroys any windows constructed with the SZBARF_AUTOTIDY
 	//						flag. CControlBars created with this flag will not generally be around
 	//						next time in.
 	//					2. Positions and sizes are saved in a binary format, based on the ID of the
-	//						control bars. You should ensure all your CControlBars have unique ID’s.
+	//						control bars. You should ensure all your CControlBars have unique IDâ€™s.
 	void SaveSizeBarState(LPCTSTR pszProfileName);
 
 	
@@ -481,13 +481,13 @@ public:
 	// --- Out : 
 	// --- Returns : 
 	// --- Effect : Saves the state of the bars to the Registry/ini, including sizes.
-	//				This function calls CFrameWnd::SaveBarState() to do most of it’s work. 
+	//				This function calls CFrameWnd::SaveBarState() to do most of itâ€™s work. 
 	//				Notes:
 	//					1. This function destroys any windows constructed with the SZBARF_AUTOTIDY
 	//						flag. CControlBars created with this flag will not generally be around
 	//						next time in.
 	//					2. Positions and sizes are saved in a binary format, based on the ID of the
-	//						control bars. You should ensure all your CControlBars have unique ID’s.
+	//						control bars. You should ensure all your CControlBars have unique IDâ€™s.
 	void SaveSizeBarState(LPCTSTR pszProfileName);
 
 	void SaveBarState(LPCTSTR lpszProfileName) const;

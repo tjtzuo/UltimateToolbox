@@ -12,7 +12,7 @@
 
 
 #ifndef WINVER
-#define WINVER 0x0400
+//#define WINVER 0x0400
 #endif
 
 
@@ -27,10 +27,10 @@
 #endif // _AFX_NO_AFXCMN_SUPPORT
 
 #include "OXAdvancedAssert.h"
-
+/*
 #include <WinDef.h>
 #include <multimon.h>
-
+*/
 // Add this line to statically link UTLib*.lib
 //#include "UTStaticLib.h"
 

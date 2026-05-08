@@ -42,7 +42,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include <mapiguid.h>
+//#include <mapiguid.h>
 #include <wab.h>
 #include "oxDllext.h"
  

@@ -1,4 +1,4 @@
-// ==========================================================================
+ï»¿// ==========================================================================
 // 					Class Implementation : COXRollup
 // ==========================================================================
 
@@ -7,7 +7,7 @@
 // Version: 9.3
 
 // This software along with its related components, documentation and files ("The Libraries")
-// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is Â© 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -127,7 +127,7 @@ void COXRollup::RemoveFromRUList()
 	ASSERT_VALID(this);
 	POSITION pos = m_RollupList.Find(this, NULL);
 
-	// this is not to be expected an error (maybe you don´t want this rollup to arrange, so
+	// this is not to be expected an error (maybe you donÂ´t want this rollup to arrange, so
 	// you called this function before)
 	if (pos != NULL)
 		m_RollupList.RemoveAt(pos);
@@ -192,7 +192,7 @@ void COXRollup::OnNcPaint()
 
 void COXRollup::OnClickedRoll()
 	{
-	// don´t care about it if I´m no window
+	// donÂ´t care about it if IÂ´m no window
 	if (GetSafeHwnd() == NULL)
 		return;
 	
@@ -358,7 +358,7 @@ HWND COXRollup::GetCurMsgRecipient()
 //
 LRESULT COXRollup::Send2MR(WORD msg)
 	{
-	// we can´t send a message to a parent if we are no window!
+	// we canÂ´t send a message to a parent if we are no window!
 	ASSERT(GetSafeHwnd() != NULL);
 	
 	HWND hWnd = GetCurMsgRecipient();
@@ -373,7 +373,7 @@ LRESULT COXRollup::Send2MR(WORD msg)
 //
 BOOL COXRollup::Post2MR(WORD msg)
 	{
-	// we can´t send a message to a parent if we are no window!
+	// we canÂ´t send a message to a parent if we are no window!
 	ASSERT(GetSafeHwnd() != NULL);
 	
 	HWND hWnd = GetCurMsgRecipient();
@@ -391,7 +391,7 @@ HWND COXRollup::SetRecipient(CWnd* pWnd)
 	// set recipient
 	m_hWndMR = pWnd->GetSafeHwnd();
 
-	TRACE1("[RU]New recipient´s HWND : %ld\n", m_hWndMR);
+	TRACE1("[RU]New recipientÂ´s HWND : %ld\n", m_hWndMR);
 	return hOld;
 	} 
 
@@ -439,7 +439,7 @@ void COXRollup::OnRollUpAbout()
 	AfxMessageBox(IDS_OX_RU_ABOUT, MB_OK | MB_ICONINFORMATION);
 	}
 
-// Intent: don´t allow wrong resources the class doesn´t allow
+// Intent: donÂ´t allow wrong resources the class doesnÂ´t allow
 //
 void  COXRollup::DetermineFrameStyle()
 	{
@@ -467,14 +467,14 @@ void  COXRollup::DetermineFrameStyle()
 void COXRollup::OnSize(UINT nType, int cx, int cy)
 	{
 	CDialog::OnSize(nType, cx, cy);
-	// if no resizing style and I don´t exist
+	// if no resizing style and I donÂ´t exist
 	if ((!m_bResizingFrame) || (GetSafeHwnd() == NULL))
 		return;
 	
 	CRect crCaption, crClient;
 	GetClientRect(&crClient);
 	
-	// if dialog (Titlebar) doesn´t exist, skip sizing
+	// if dialog (Titlebar) doesnÂ´t exist, skip sizing
 	// this will happen at the first call in this routine
 	if((m_pTitleBar == NULL) || (m_pTitleBar->GetSafeHwnd() == NULL))
 		return;
@@ -679,7 +679,7 @@ void COXRollup::Arrange()
 	if (IsArranged()) return;
 	
 	CWnd* pMainWnd = AfxGetMainWnd();
-	ASSERT((pMainWnd != NULL) && ::IsWindow(pMainWnd->m_hWnd));		// don´t care about OLE
+	ASSERT((pMainWnd != NULL) && ::IsWindow(pMainWnd->m_hWnd));		// donÂ´t care about OLE
 	if (!pMainWnd->IsWindowEnabled() && pMainWnd->IsIconic())
 		return;
 	
@@ -702,7 +702,7 @@ void COXRollup::Arrange()
 		}
 	else
 		{
-		ASSERT(pRollup != this);		// can´t happen, otherwise we would have been arranged
+		ASSERT(pRollup != this);		// canÂ´t happen, otherwise we would have been arranged
 		ASSERT(pRollup->IsRolledUp());	// must be up if arranged
 		CRect rcLastRollup;
 		pRollup->GetWindowRect(&rcLastRollup);
@@ -722,7 +722,7 @@ void COXRollup::ArrangeAll()
 	ASSERT_VALID(this);
 	
 	CWnd* pMainWnd = AfxGetMainWnd();
-	ASSERT((pMainWnd != NULL) && ::IsWindow(pMainWnd->m_hWnd));		// don´t care about OLE
+	ASSERT((pMainWnd != NULL) && ::IsWindow(pMainWnd->m_hWnd));		// donÂ´t care about OLE
 	if (!pMainWnd->IsWindowEnabled() && pMainWnd->IsIconic())
 		return;
 	
@@ -744,7 +744,7 @@ void COXRollup::ArrangeAll()
 		pRoll->SetWindowPos(NULL, nLeft, nNewTop, 0, 0, SWP_NOZORDER | SWP_NOSIZE | SWP_NOACTIVATE);
 		nNewTop += rcWndNewPos.Height() - 1;
 		}
-	// now add the ones that haven´t been rolled up before
+	// now add the ones that havenÂ´t been rolled up before
 	POSITION posNotArranged = m_RollupList.GetHeadPosition();
 	while (posNotArranged != NULL)
 		{
@@ -774,7 +774,7 @@ void COXRollup::ReArrangeArranged()
 		return;	// this function has to be as fast as possible
 	
 	CWnd* pMainWnd = AfxGetMainWnd();
-	ASSERT((pMainWnd != NULL) && ::IsWindow(pMainWnd->m_hWnd));		// don´t care about OLE
+	ASSERT((pMainWnd != NULL) && ::IsWindow(pMainWnd->m_hWnd));		// donÂ´t care about OLE
 	if (!pMainWnd->IsWindowEnabled() && pMainWnd->IsIconic())
 		return;
 	

@@ -1,4 +1,4 @@
-/***************************************************
+ï»¿/***************************************************
 ****************************************************/
 // Version: 9.3
 
@@ -165,12 +165,12 @@ Open
 		database - name of the database to open (ex. c:\data.mdb)
 		table - name of the table in the database to open
 		openType - type of table to open, possible types are
-			dbOpenDynaset,dbOpenTable ,dbOpenSnapshot
+			dbOpenDynaset,dbOpenTableÂ ,dbOpenSnapshot
 			(For more information see CDaoRecordset::Open)
 		sql - query to run (ex. SELECT * from MyTable)
 		options - specifies other opening options as listed below
 			dbAppendOnly, dbForwardOnly, dbSeeChanges, dbDenyWrite,
-			dbDenyRead, dbReadOnly, dbInconsistent, dbConsistent   
+			dbDenyRead, dbReadOnly, dbInconsistent, dbConsistentÂ Â Â 
 			(For more information see CDaoRecordset::Open)
 	Return 
 		TRUE - success

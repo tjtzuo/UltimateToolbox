@@ -1,4 +1,4 @@
-// ==========================================================================
+ï»¿// ==========================================================================
 //                    Class Specification : COXToolTipCtrl
 // ==========================================================================
 // //////////////////////////////////////////////////////////////////////////
@@ -7,7 +7,7 @@
 // Version: 9.3
 
 // This software along with its related components, documentation and files ("The Libraries")
-// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is Â© 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -290,7 +290,7 @@ class OX_CLASS_DECL COXToolTipCtrl : public CWnd
 {
 // Construction
 public:
-	// --- In  :
+	// --- InÂ  :
 	// --- Out :
 	// --- Returns:
 	// --- Effect : The constructor - all relevant variables initialized
@@ -299,7 +299,7 @@ public:
 // Attributes
 public:
 	// --- In:		ToolInfo	-	Reference to a TOOLINFO object that receives the 
-	//								tool’s text.
+	//								toolâ€™s text.
 	//				pWnd		-	Pointer to the window that contains the tool.
 	//				nIDTool		-	ID of the tool.
 	// --- Out :
@@ -332,7 +332,7 @@ public:
 	// --- In:		pWnd	-	Pointer to the window that contains the tool.
 	//				nIDTool	-	ID of the tool.
 	// --- Out:		str		-	Reference to a CString object that receives the 
-	//							tool’s text
+	//							toolâ€™s text
 	// --- Returns : 
 	// --- Effect : Retrieves the text that a tooltip control maintains for a tool.
 	//              If pWnd and nIDTool specify a valid tool that has been previously
@@ -377,7 +377,7 @@ public:
     int  GetDelayTime(DWORD dwDuration) const;
 
 
-	// --- In  :
+	// --- InÂ  :
 	// --- Out :
 	// --- Returns:	The maximum width for a tooltip window, or 0 if this width is 
 	//				calculated automatically
@@ -399,7 +399,7 @@ public:
 	// --- Effect:	Sets the maximum tooltip window width
     int  SetMaxTipWidth(int nWidth);
 
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out :
 	// --- Returns:	A COLORREF value that represents the background color of the
 	//				tooltip window
@@ -415,7 +415,7 @@ public:
     void     SetTipBkColor(COLORREF clr);
 
     
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out :
 	// --- Returns: A COLORREF value that represents the text color
 	// --- Effect:	Retrieves the text color 
@@ -445,7 +445,7 @@ public:
     inline void Activate(BOOL bActivate) { m_bActivated = bActivate; }
 
     
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out :
 	// --- Returns: A count of tools registered with the tooltip control
 	// --- Effect:	Retrieves a count of the tools registered with the 
@@ -453,7 +453,7 @@ public:
     inline int  GetToolCount() const { return (int)m_arrTools.GetSize(); }
 
     
-	// --- In  :	lprc	-	Address of a RECT structure that contains the margin 
+	// --- InÂ  :	lprc	-	Address of a RECT structure that contains the margin 
 	//							information to be set. The members of the RECT 
 	//							structure do not define a bounding rectangle, 
 	//							but rather the top, bottom, left and right distances 
@@ -477,7 +477,7 @@ public:
     BOOL Create(CWnd* pParentWnd);
 
 
-	// --- In  :	pWnd		-	Pointer to the window that contains the tool.
+	// --- InÂ  :	pWnd		-	Pointer to the window that contains the tool.
 	//				nIDText		-	ID of the string resource that contains the text 
 	//								for the tool. If the text contains a '\r' 
 	//								character, then all text before the \r is the 
@@ -515,7 +515,7 @@ public:
 	//              collection of tools supported by a tooltip control.
 	void DelTool(CWnd* pWnd, UINT nIDTool = 0);
     
-	// --- In  :	pWnd		-	Pointer to the window that contains the tool.
+	// --- InÂ  :	pWnd		-	Pointer to the window that contains the tool.
 	//				lpRectTool	-	Pointer to a RECT structure containing coordinates 
 	//								of the tool's bounding rectangle, using client 
 	//								coordinates relative to the window identified 
@@ -542,7 +542,7 @@ public:
 	//								information about the tool.
 	// --- Out :
 	// --- Returns:	TRUE if the point specified by the hit-test information is 
-	//				within the tool’s bounding rectangle; otherwise FALSE.
+	//				within the toolâ€™s bounding rectangle; otherwise FALSE.
 	// --- Effect:	Returns TRUE if the given pt is in the windows toolinfo bounding 
 	//				rectangle (pt is in client coords relative to the parent window). 
 	//				If this function returns a TRUE, the structure pointed to by 
@@ -550,7 +550,7 @@ public:
 	BOOL HitTest(HWND pWnd, POINT pt, OXTOOLINFO* pToolInfo) const;
     
 	
-	// --- In  :
+	// --- InÂ  :
 	// --- Out :
 	// --- Returns:
 	// --- Effect:	Hides the tooltip.
@@ -586,7 +586,7 @@ protected:
 
 // Implementation
 public:
-	// --- In  :
+	// --- InÂ  :
 	// --- Out :
 	// --- Returns:
 	// --- Effect:	The destructor - cleanup and memory release.
@@ -655,7 +655,7 @@ protected:
 	//				specified tool.
     BOOL IsCursorInTool(COXToolTipInfo* pToolInfo) const;
 
-	// --- In  :
+	// --- InÂ  :
 	// --- Out :
 	// --- Returns:	Returns TRUE if the cursor is in the current tooltip window.
 	// --- Effect:	Retrieves the flag that specifies if the cursor is over the 
@@ -682,7 +682,7 @@ protected:
 	// --- Effect:	Sets the font to be used in the tooltip.
 	BOOL SetLogFont(LPLOGFONT lpLogFont, BOOL bRedraw = TRUE);
 
-	// --- In  :
+	// --- InÂ  :
 	// --- Out :
 	// --- Returns: A pointer to a LOGFONT structure that contains the default font 
 	//				used in tooltips.

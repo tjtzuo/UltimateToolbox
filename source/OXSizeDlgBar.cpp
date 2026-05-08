@@ -1,4 +1,4 @@
-// ===================================================================================
+﻿// ===================================================================================
 // 					Class Implementation : COXSizeDialogBar
 // ===================================================================================
 
@@ -7,7 +7,7 @@
 // Version: 9.3
 
 // This software along with its related components, documentation and files ("The Libraries")
-// is � 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -85,7 +85,7 @@ struct COXSizeDialogBar_ExtData
 	
 // Member functions ---------------------------------------------------------
 // public:
-#if defined(_AFXDLL) || (defined(_UNICODE) && _MFC_VER >= 0x0700)
+#if defined(_AFXDLL)// || (defined(_UNICODE) && _MFC_VER >= 0x0700)
 #pragma message ( "oxsizedlgbar.cpp line 84 : VS 2003 may need this symbol defined" )
 const TCHAR _afxWndControlBar[] = _T("AfxControlBar");  // class for control bars
 #endif

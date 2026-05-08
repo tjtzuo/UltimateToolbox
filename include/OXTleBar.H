@@ -1,4 +1,4 @@
-// ==========================================================================
+ï»¿// ==========================================================================
 // 					Class Specification : COXTitleBar
 // ==========================================================================
 
@@ -7,7 +7,7 @@
 // Version: 9.3
 
 // This software along with its related components, documentation and files ("The Libraries")
-// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is Â© 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -56,7 +56,7 @@
 #include "OXDllExt.h"
 
 
-// really arbitrary values; don´t rely on
+// really arbitrary values; donÂ´t rely on
 #define SCROLL_DOWN		12
 #define SCROLL_UP		27
 
@@ -137,23 +137,23 @@ public:
 	// --- Out : 
 	// --- Returns :HTSYSMENU, HTCAPTION, HTSIZE and HTNOWHERE.
 	// --- Effect : Override this function if you want to provide some special
-	//				„hot areas" in the titlebar. Predefined area codes are HTSYSMENU,
+	//				â€žhot areas" in the titlebar. Predefined area codes are HTSYSMENU,
 	//				HTCAPTION and HTSIZE. (same as in OnNcHitTest)
 
 	virtual void DerivedHitProcessing(LRESULT nHitResult, UINT nFlags, CPoint& point);
-	// --- In  : nHitResult : one of the codes the base class couldn´t interpret
+	// --- In  : nHitResult : one of the codes the base class couldnÂ´t interpret
 	//			 nFlags : key modifiers used
 	//			 point : exact hit point
 	// --- Out : 
 	// --- Returns :
 	// --- Effect : Called from base class COXRollup if it encounters a hit result it
-	//				can´t interpret (if you have added other hot areas in your titlebar)
+	//				canÂ´t interpret (if you have added other hot areas in your titlebar)
 
 	void SetRollupState(int nState); 
 	// --- In  : nState : Either SCROLL_UP or SCROLL_DOWN (will be asserted!)
 	// --- Out : 
 	// --- Returns :
-	// --- Effect : Sets the Rollup „Button" to either scroll up or down bitmap
+	// --- Effect : Sets the Rollup â€žButton" to either scroll up or down bitmap
 
 	BOOL IsRolledUp();
 	// --- In  : 

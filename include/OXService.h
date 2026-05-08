@@ -1,4 +1,4 @@
-// ==========================================================================
+ï»¿// ==========================================================================
 // 					Class Specification : COXService
 // ==========================================================================
 // Header file :		OXService.h
@@ -20,7 +20,7 @@
 // Description:
 //		The class COXService is a class that provides access to NT services.
 //
-//		Microsoft® Windows NT® supports an application type known as a service.
+//		MicrosoftÂ® Windows NTÂ® supports an application type known as a service.
 //		A service conforms to the interface rules of the Service Control Manager
 //		(SCM). It can be started automatically at system boot, by a user through
 //		the Services control panel applet, or by an application that uses the

@@ -1,4 +1,4 @@
-// ==========================================================================
+ï»¿// ==========================================================================
 // 					Class Specification : 
 //			COXCoolToolBar & COXCoolToolBarCmdUI
 // ==========================================================================
@@ -8,7 +8,7 @@
 // Version: 9.3
 
 // This software along with its related components, documentation and files ("The Libraries")
-// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is Â© 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -2401,8 +2401,8 @@ public:
 	//				in the bitmap represent. Common control customization
 	//				dialog uses it to determine which buttons could possible be 
 	//				on the toolbar. The idea is that you call SetBitmapIds() 
-	//				to set the ID’s that correspond  to the images in the bitmap, 
-	//				and SetButtons() to determine the command ID’s
+	//				to set the IDâ€™s that correspond  to the images in the bitmap, 
+	//				and SetButtons() to determine the command IDâ€™s
 	//				that are actually on the toolbar. 
 	//
 	//				The common control customization allows you to drag buttons,

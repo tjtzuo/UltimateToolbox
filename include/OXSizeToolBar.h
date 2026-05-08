@@ -1,4 +1,4 @@
-// ===================================================================================
+ï»¿// ===================================================================================
 // 					Class Specification : 
 //				COXToolCmdUI & COXToolBarCtrl & COXSizeToolBar
 // ===================================================================================
@@ -8,7 +8,7 @@
 // Version: 9.3
 
 // This software along with its related components, documentation and files ("The Libraries")
-// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is Â© 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -44,13 +44,13 @@
 //					CToolBar. It responds to the standard MFC ON_UPDATE_CMD_UI handling and
 //					routing, tooltips and prompting, and provides the benefits of the common
 //					control, such as configuration.
-//					This class is actually implemented as a Windows’95 CToolBarCtrl placed on
+//					This class is actually implemented as a Windowsâ€™95 CToolBarCtrl placed on
 //					a COXSizeControlBar. Due to restrictions in the underlying common control it
-//					is not (and don’t think it ever can be) 100% compatible with the CToolBar
+//					is not (and donâ€™t think it ever can be) 100% compatible with the CToolBar
 //					class. However, enough compatibility is provided for AppWizard generated
 //					apps to work with minimal change (i.e. altering CMainFrame::m_wndToolBar
 //					to be a COXSizeToolBar). 
-//					Some additional functionality has been added to utiltise the Windows’95
+//					Some additional functionality has been added to utiltise the Windowsâ€™95
 //					common control configuration. To use this class, you must include the
 //					header file "afxcmn.h".
 // Remark:
@@ -243,7 +243,7 @@ public:
 	//			 nButtons : Number of buttons in the above array.
 	// --- Out : 
 	// --- Returns : succeeded or not
-	// --- Effect : Sets the command id’s for the buttons in the toolbar. This function
+	// --- Effect : Sets the command idâ€™s for the buttons in the toolbar. This function
 	//				is equivalent to CToolBar::SetButtons(). 
 	//				Non-Compatibility with CToolBar
 	//					1. SetButtons() must be called after Create() and LoadBitmap().
@@ -260,8 +260,8 @@ public:
 	//				with the CCS_ADJUSTABLE style. SetButtons() then uses this specified array
 	//				to determine which bitmap images to use, and the common control customization
 	//				dialog uses it to determine which buttons could possible be on the toolbar.
-	//				The idea is that you call SetBitmapIds() to set the ID’s that correspond  to
-	//				the images in the bitmap, and SetButtons() to determine the command ID’s
+	//				The idea is that you call SetBitmapIds() to set the IDâ€™s that correspond  to
+	//				the images in the bitmap, and SetButtons() to determine the command IDâ€™s
 	//				that are actually on the toolbar. 
 	//
 	//				The common control customization allows buttons you to drag buttons,
@@ -273,7 +273,7 @@ public:
 	// --- In  :
 	// --- Out : 
 	// --- Returns : the underlying CToolBarCtrl object
-	// --- Effect : Returns a pointer to the underlying CToolBarCtrl object (Windows’95 common
+	// --- Effect : Returns a pointer to the underlying CToolBarCtrl object (Windowsâ€™95 common
 	//				control). You should manipulate this object explicitly to obtain more
 	//				refined toolbar behaviour - e.g. setting buttons, etc.
 

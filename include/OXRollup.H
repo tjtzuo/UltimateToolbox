@@ -1,4 +1,4 @@
-// ==========================================================================
+ï»¿// ==========================================================================
 // 					Class Specification : COXRollup
 // ==========================================================================
 
@@ -8,7 +8,7 @@
 
 //
 // This software along with its related components, documentation and files ("The Libraries")
-// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is Â© 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -168,7 +168,7 @@ public:
 	// --- Out : 
 	// --- Returns : 
 	// --- Effect : Called by destructor to remove it from active rollup list.
-	//				Call if you don´t want your Rollup available to Arrange All
+	//				Call if you donÂ´t want your Rollup available to Arrange All
 
 	void InternalRollUp();
 	// --- In  : 
@@ -241,7 +241,7 @@ public:
 	// --- Out : 
 	// --- Returns : the window handle of the old message recipient
 	// --- Effect : Call this function from an OnSetFocus handler to notify the Rollup of its
-	//				new address to send its messages. Store return value for ongoing „talk" between Rollup
+	//				new address to send its messages. Store return value for ongoing â€žtalk" between Rollup
 	//				and message recipient
 
 	LRESULT	Send2MR(WORD msg);

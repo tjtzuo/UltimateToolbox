@@ -1,4 +1,4 @@
-// ==========================================================================
+ï»¿// ==========================================================================
 // 				Class Specification : COXShellNamespaceNavigator
 // ==========================================================================
 
@@ -7,7 +7,7 @@
 // Version: 9.3
 
 // This software along with its related components, documentation and files ("The Libraries")
-// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is Â© 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -59,7 +59,7 @@ A namespace is a collection of symbols, such as database keys or file and
 directory names. The shell uses a single hierarchical namespace to organize 
 all objects of interest to the user, including files, storage devices, 
 printers, network resources, and anything else that can be viewed using 
-Microsoft® Windows® Explorer. The root of this unified namespace is the 
+MicrosoftÂ® WindowsÂ® Explorer. The root of this unified namespace is the 
 desktop. 
 
 In many ways, the shell namespace is analogous to a file system's directory 

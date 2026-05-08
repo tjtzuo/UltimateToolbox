@@ -1,4 +1,4 @@
-// ==========================================================================
+ï»¿// ==========================================================================
 // 						Class Implementation : COXCopyTree
 // ==========================================================================
 
@@ -7,7 +7,7 @@
 // Version: 9.3
 
 // This software along with its related components, documentation and files ("The Libraries")
-// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is Â© 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -349,7 +349,7 @@ void COXCopyTree::WalkTree(WORD wLevel)
 
 				if (!m_SourcePath.DoCopy(m_DestPath))
 					{
-			 		TRACE(_T("COXCopyTree::WalkTree : Could not copy '%s' to '´%s'\n"),
+			 		TRACE(_T("COXCopyTree::WalkTree : Could not copy '%s' to 'Â´%s'\n"),
 			 			LPCTSTR(m_SourcePath.GetPath()), LPCTSTR(m_DestPath.GetPath()));
 
 					m_nStatus = F_COPYFILE;

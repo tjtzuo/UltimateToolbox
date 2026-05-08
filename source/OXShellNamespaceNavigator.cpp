@@ -1,4 +1,4 @@
-// OXShellNamespaceNavigator.cpp : implementation file
+﻿// OXShellNamespaceNavigator.cpp : implementation file
 //
 // Version: 9.3
 
@@ -247,7 +247,7 @@ hwndOwner		-	Handle to the owner window that the client should specify if it
 					displays a dialog box or message box. 
 pbcReserved		-	Reserved; this parameter is always NULL. 
 lpszDisplayName	-	Address of a null-terminated UNICODE string specifying the display
-					name. This parameter must be a display name for parsing�that is, 
+					name. This parameter must be a display name for parsing—that is, 
 					a display name retrieved using the SHGDN_FORPARSING value. 
 pchEaten		-	Address of a ULONG value that receives the number of characters 
 					of the display name that was parsed. 

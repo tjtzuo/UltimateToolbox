@@ -1,11 +1,11 @@
-// //////////////////////////////////////////////////////////////////////////
+ï»¿// //////////////////////////////////////////////////////////////////////////
 // Header file : OXParser.h
 // Parser.h: interface for the COXParser class.
 
 // Version: 9.3
 
 // This software along with its related components, documentation and files ("The Libraries")
-// is © 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
+// is Â© 1994-2007 The Code Project (1612916 Ontario Limited) and use of The Libraries is
 // governed by a software license agreement ("Agreement").  Copies of the Agreement are
 // available at The Code Project (www.codeproject.com), as part of the package you downloaded
 // to obtain this file, or directly from our office.  For a copy of the license governing
@@ -319,20 +319,20 @@ public:
 
     LPCTSTR GetText() const { return m_Text.GetString(); }
 
-	// --- In  : szText - the new text
+	// --- InÂ  : szText - the new text
 	// --- Out :
 	// --- Returns : TRUE on success
 	// --- Effect : Sets the text of the COXParserObject object
     BOOL    SetText(LPCTSTR szText);
 
-	// --- In  : szText - the name to check
+	// --- InÂ  : szText - the name to check
 	//           bCaseSensitive - whether or not the check is case sensitive
 	// --- Out :
 	// --- Returns : TRUE if szText is then same as the Object's text
 	// --- Effect : 
     BOOL    IsText(LPCTSTR szText, BOOL bCaseSensitive = FALSE);
 
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out :
 	// --- Returns : This objects parent element
 	// --- Effect : 
@@ -368,7 +368,7 @@ public:
     BOOL    IsName(LPCTSTR szName, 
 					BOOL bCheckCase = FALSE) { return IsText(szName, bCheckCase); }
 
-	// --- In  : szValue, - the name to check
+	// --- InÂ  : szValue, - the name to check
 	//           bCaseSensitive - whether or not the check is case sensitive
 	// --- Out :
 	// --- Returns : TRUE if szValue, is then same as the Object's value
@@ -376,26 +376,26 @@ public:
     BOOL    IsValue(LPCTSTR szValue, BOOL bCheckCase = FALSE);
 
 
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out :
 	// --- Returns : The string value, or '\0' if no string value (or if this object
 	//               is actually holds an integer value)
 	// --- Effect : 
     LPCTSTR GetStringValue();
 	
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out :
 	// --- Returns : The integer value, or 0 if this object actually holds a string value
 	// --- Effect : 
     int     GetIntValue() const;
 
-	// --- In  : sValue - new string value
+	// --- InÂ  : sValue - new string value
 	// --- Out :
 	// --- Returns :
 	// --- Effect : Sets the string value in the attribute object
     void    SetValue(LPCTSTR szValue);
 
-    // --- In  : nValue - new integer value
+    // --- InÂ  : nValue - new integer value
 	// --- Out :
 	// --- Returns :
 	// --- Effect : Sets the integer value in the attribute object
@@ -404,7 +404,7 @@ public:
     int     GetAttributeType() const          { return m_nFlags;       }
     void    SetAttributeType(int nAttrType)   { m_nFlags = nAttrType;  }
 
-	// --- In  : Attr - another COXAttribute object
+	// --- InÂ  : Attr - another COXAttribute object
 	// --- Out :
 	// --- Returns : 
 	// --- Effect : copies the contents of one COXAttribute object to this object
@@ -424,7 +424,7 @@ class OX_CLASS_DECL COXParserElement : public COXParserObject
 public:
     COXParserElement();
 
-	// --- In  : szName - initial element name
+	// --- InÂ  : szName - initial element name
 	// --- Out :
 	// --- Returns :
 	// --- Effect : constructs a element object and sets the name
@@ -434,20 +434,20 @@ public:
     int             NumObjects() const { return PtrToInt(m_Objects.size());    }
     COXParserObject*  Object(int nIndex) const { return m_Objects[nIndex];   }
 
-	// --- In  : nIndex - the 0-based position this object should be inserted
+	// --- InÂ  : nIndex - the 0-based position this object should be inserted
 	//           pObject - object to add
 	// --- Out :
 	// --- Returns : the newly added object
 	// --- Effect : Inserts the supplied object into this object
     COXParserObject*  InsertObject(int nIndex, COXParserObject* pObject);
 
-    // --- In  : pObject - object to add
+    // --- InÂ  : pObject - object to add
 	// --- Out :
 	// --- Returns : the newly added object
 	// --- Effect : Adds the supplied object to this object
 	COXParserObject*  AddObject(COXParserObject* pObject);
 
-    // --- In  : nIndex - the 0-based position this object should be moved to
+    // --- InÂ  : nIndex - the 0-based position this object should be moved to
 	//           pObject - object to move
 	// --- Out :
 	// --- Returns : the moved object
@@ -455,37 +455,37 @@ public:
 	//              does not already exist in the list of objects then it is inserted.
 	COXParserObject*  MoveObject(int nIndex, COXParserObject* pObject);
 
-	// --- In  : nIndex - the 0-based index of the element to remove
+	// --- InÂ  : nIndex - the 0-based index of the element to remove
 	// --- Out :
 	// --- Returns : Returns TRUE on success
 	// --- Effect : Deletes the specified element from the object.
     BOOL            DelObject(int nIndex);
 
-    // --- In  : pElement - a pointer to the element to remove
+    // --- InÂ  : pElement - a pointer to the element to remove
 	// --- Out :
 	// --- Returns : Returns TRUE on success
 	// --- Effect : Deletes the specified element from the object.
 	BOOL            DelObject(COXParserObject* pObject);
 
-    // --- In  : 
+    // --- InÂ  : 
 	// --- Out :
 	// --- Returns :
 	// --- Effect : Deletes all elements from the object
 	void            ClearObjects();
 
-	// --- In  : szName - the name of the element to add
+	// --- InÂ  : szName - the name of the element to add
 	// --- Out :
 	// --- Returns : Return the newly added element, or NULL on failure
 	// --- Effect : Creates and adds a new element to object with the supplied name.
     COXParserElement* InsertElement(int nIndex, LPCTSTR szName);
 
-	// --- In  : szName - the name of the element to add
+	// --- InÂ  : szName - the name of the element to add
 	// --- Out :
 	// --- Returns : Return the newly added element, or NULL on failure
 	// --- Effect : Creates and adds a new element to object with the supplied name.
     COXParserElement* AddElement(LPCTSTR szName);
 
-	// --- In  : szSearchName - name of the element to find. This can be in the
+	// --- InÂ  : szSearchName - name of the element to find. This can be in the
 	//                          form "Level1\\Level2", in which case the function
 	//                          will search down the Parser tree for reqiured nodes.
 	//           bCaseSensitive - search is case sensitive iff this is true
@@ -498,45 +498,45 @@ public:
     int             NumAttributes() const { return PtrToInt(m_Attributes.size());    }
     COXAttribute*   Attribute(int nIndex) const { return m_Attributes[nIndex];   }
 
-	// --- In  : pValue - new COXAttribute pointer to add
+	// --- InÂ  : pValue - new COXAttribute pointer to add
 	// --- Out :
 	// --- Returns : Returns the newly added attribute
 	// --- Effect : Adds the supplied attribute to the element
     COXAttribute*     AddAttribute(COXAttribute* pAttribute);
 
-	// --- In  : szName - the name of the value to add
+	// --- InÂ  : szName - the name of the value to add
 	//           szValue - the string value to add
 	// --- Out :
 	// --- Returns : Return the newly added Attribute, or NULL on failure
 	// --- Effect : Creates and adds a new Attribute object with the supplied name.
     COXAttribute*     AddAttribute(LPCTSTR szName, LPCTSTR szValue);
 
-    // --- In  : szName - the name of the value to add
+    // --- InÂ  : szName - the name of the value to add
 	//           nValue - the integer value to add
 	// --- Out :
 	// --- Returns : Return the newly added attribute, or NULL on failure
 	// --- Effect : Creates and adds a new attribute object with the supplied name.
 	COXAttribute*     AddAttribute(LPCTSTR szName, int nValue);
 
-	// --- In  : nIndex - the 0-based index of the attributes to remove
+	// --- InÂ  : nIndex - the 0-based index of the attributes to remove
 	// --- Out :
 	// --- Returns : Returns TRUE on success
 	// --- Effect : Deletes the specified attributes from the object.
     BOOL            DelAttribute(int nIndex);
     
-	// --- In  : pAttribute - a pointer to the attributes object to remove
+	// --- InÂ  : pAttribute - a pointer to the attributes object to remove
 	// --- Out :
 	// --- Returns : Returns TRUE on success
 	// --- Effect : Deletes the specified attributes from the object.
 	BOOL            DelAttribute(COXAttribute* pAttribute);
 
-    // --- In  : 
+    // --- InÂ  : 
 	// --- Out :
 	// --- Returns :
 	// --- Effect : Deletes all attributes from the object
 	void            ClearAttributes();
 
-	// --- In  : szName - name of the attributes to find
+	// --- InÂ  : szName - name of the attributes to find
 	//           bCaseSensitive - search is case sensitive iff this is true
 	// --- Out :
 	// --- Returns : Returns either the found attributes, or NULL on failure
@@ -545,7 +545,7 @@ public:
     COXAttribute*     FindAttribute(LPCTSTR szName, 
 						bool bCaseSensitive = false);
 
-    // --- In  : szName - name of the attributes to find
+    // --- InÂ  : szName - name of the attributes to find
 	//           szValue - value of the attributes to find
 	//           bCaseSensitive - search is case sensitive iff this is true
 	// --- Out :
@@ -555,7 +555,7 @@ public:
 	COXAttribute*     FindAttribute(LPCTSTR szName, LPCTSTR szValue, 
 						bool bCaseSensitive = false);
 
-    // --- In  : szName - name of the attributes to find
+    // --- InÂ  : szName - name of the attributes to find
 	//           nValue - value of the attributes to find
 	//           bCaseSensitive - search is case sensitive iff this is true
 	// --- Out :
@@ -611,26 +611,26 @@ public:
 // Operations
 public:
 
-	// --- In  : ptr - NULL terminated character buffer to be parsed
+	// --- InÂ  : ptr - NULL terminated character buffer to be parsed
 	// --- Out :
 	// --- Returns : Returns TRUE on success, FALSE otherwise
 	// --- Effect : Parses the supplied buffer and stores the results in a tree
 	//              of COXParserElement and COXAttribute objects
     BOOL Parse(LPTSTR ptr);
 
-	// --- In  : szFile - name of the file to parse
+	// --- InÂ  : szFile - name of the file to parse
 	// --- Out :
 	// --- Returns : TRUE on success
 	// --- Effect : Loads and parses the supplied file and stores the results in a tree
     BOOL ParseFile(LPCTSTR szFile);
 
-	// --- In  : szFile - name of the file to write
+	// --- InÂ  : szFile - name of the file to write
 	// --- Out :
 	// --- Returns : TRUE on success.
 	// --- Effect : Stores the contents of the parse tree in a file.
     BOOL WriteFile(LPCTSTR szFile);
 
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out :
 	// --- Returns :
 	// --- Effect : resets the parser object ot an empty state
@@ -640,25 +640,25 @@ public:
 public:
     COXParserElement* Root()                 { return &m_Root;           }
 
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out :
 	// --- Returns : Returns TRUE if the parser tree is empty.
 	// --- Effect : 
     BOOL IsEmpty() const;
 
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out :
 	// --- Returns : Returns TRUE if the parsing is casesensitive.
 	// --- Effect : 
     BOOL CaseSensitive() const { return m_bCaseSensitive;  }
     
-	// --- In  : bCase - FALSE for non-casesensitive parsing, otherwise - TRUE. 
+	// --- InÂ  : bCase - FALSE for non-casesensitive parsing, otherwise - TRUE. 
 	// --- Out :
 	// --- Returns : 
 	// --- Effect : 
 	void SetCaseSensitive(BOOL bCase)      { m_bCaseSensitive = bCase; }
 
-	// --- In  : pFn - the error function to be called when an error occurs
+	// --- InÂ  : pFn - the error function to be called when an error occurs
 	//           dwData - application specific data that is passed to the error function 
 	// --- Out :
 	// --- Returns : 
@@ -672,7 +672,7 @@ public:
 	//                    dwData is the data supplied to SetErrorRptFunction.
     void SetErrorRptFunction(ParserErrorFn pFn, DWORD dwData);
     
-	// --- In  : nErrorCode - error code. 
+	// --- InÂ  : nErrorCode - error code. 
 	// --- Out :
 	// --- Returns : text representation of the error
 	// --- Effect : converts error code to string representation
@@ -681,19 +681,19 @@ public:
 // Overridables for deriving new parsers
 public:
 
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out :
 	// --- Returns : TRUE on success
 	// --- Effect : Initializes the parser object in preparation for parsing
     virtual BOOL Initialize();
 
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out :
 	// --- Returns : TRUE on success
 	// --- Effect : Cleans up the parser object after parsing
     virtual BOOL Cleanup();
 
-	// --- In  : pParent - The element containing this markup entry
+	// --- InÂ  : pParent - The element containing this markup entry
 	// --- Out : 
 	// --- Returns : A pointer to a new COXParserObject that contains the PI
 	// --- Effect : Parses the Processing Instruction ("<?...?>") and adds the entry to 
@@ -701,7 +701,7 @@ public:
     virtual COXParserObject* ParseProcessingInstruction(
 		COXParserElement* pParent);
 
-	// --- In  : pParent - The element containing this markup entry
+	// --- InÂ  : pParent - The element containing this markup entry
 	// --- Out : 
 	// --- Returns : A pointer to a new COXParserObject that contains the markup entry
 	// --- Effect : Parses the markup ("<!...>") and adds the entry to the element. If the
@@ -709,13 +709,13 @@ public:
 	//              not processed.
     virtual COXParserObject* ParseMarkup(COXParserElement* pParent);
 
-	// --- In  : pParent - The element containing this comment
+	// --- InÂ  : pParent - The element containing this comment
 	// --- Out : 
 	// --- Returns : A pointer to a new COXParserObject that contains the comment
 	// --- Effect : Parses the comment ("<!--...-->") and adds the comment to the element
     virtual COXParserObject* ParseComment(COXParserElement* pParent);
 
-	// --- In  : pParent - The element containing this text entry
+	// --- InÂ  : pParent - The element containing this text entry
 	// --- Out : 
 	// --- Returns : A pointer to a new COXParserObject that contains the text entry
 	// --- Effect : Parses free text. Text parsing will stop when the first "<" 
@@ -723,14 +723,14 @@ public:
 	//              m_Token will contain the first piece of text
     virtual COXParserObject* ParseText(COXParserElement* pParent);
 
-	// --- In  : pParent - The parent of the element whose tag is being parsed
+	// --- InÂ  : pParent - The parent of the element whose tag is being parsed
 	// --- Out : bEmptyTag - will be set as true if this is an empty tag ("<.../>")
 	// --- Returns : Returns a new COXParserElement object for this tag/element
 	// --- Effect : Parses the tag for this element, and adds all attributes to the element
     virtual COXParserElement* ParseStartTag(COXParserElement* pParent, 
 		BOOL& bEmptyTag);
 
-	// --- In  : szCurrentTag - tag name for element being processed
+	// --- InÂ  : szCurrentTag - tag name for element being processed
 	//           szNewTag - The new tag found (could be beginning or ending tag)
 	// --- Out : 
 	// --- Returns : Returns TRUE if a missing end tag has been detected and should
@@ -745,7 +745,7 @@ public:
     virtual BOOL IsEndTagMissing(LPCTSTR szCurrentTag, LPCTSTR szNewTag, 
                                  BOOL NewTagIsEndTag);
 
-	// --- In  : pElement - The element containing the tag to test
+	// --- InÂ  : pElement - The element containing the tag to test
 	//           bEmptyTag - TRUE if the element is an empty element
 	// --- Out : 
 	// --- Returns : Returns TRUE if this element/tag should be ignored.
@@ -759,7 +759,7 @@ public:
     virtual BOOL IgnoreStartTag(COXParserElement* pElement, 
 		BOOL bEmptyTag);
 
-	// --- In  : szEndTag - The name of the end tag
+	// --- InÂ  : szEndTag - The name of the end tag
 	// --- Out : 
 	// --- Returns : Returns TRUE if this end tag should be ignored.
 	// --- Effect : This function is called each time an end tag is found. If 
@@ -771,7 +771,7 @@ public:
 	//              in HTML (like </strong>) as "toggles" instead of actual XML nodes.
     virtual BOOL IgnoreEndTag(LPCTSTR szEndTag);
 
-	// --- In  : pElement - The element to which an object will be added
+	// --- InÂ  : pElement - The element to which an object will be added
 	//           pObject - object ot add to element
 	// --- Out : 
 	// --- Returns : 
@@ -779,14 +779,14 @@ public:
     virtual void AddObjectToElement(COXParserElement* pElement, 
 		COXParserObject* pObject);
 
-	// --- In  : pElement - The element whose attributes are being parsed
+	// --- InÂ  : pElement - The element whose attributes are being parsed
 	// --- Out : 
 	// --- Returns : Returns TRUE on success, FALSE otherwise
 	// --- Effect : Parses the attributes for the tag for this element, and adds all 
 	//              attributes to the element
     virtual BOOL ParseAttributes(COXParserElement* pElement);
 
-	// --- In  : pElement - storage for this element
+	// --- InÂ  : pElement - storage for this element
 	//           nLevel - The depth of this element. Root node = level 0.
 	// --- Out : 
 	// --- Returns : Returns TRUE on success, FALSE otherwise
@@ -796,14 +796,14 @@ public:
 	//              parsed and added.
     virtual BOOL ParseElement(COXParserElement *pElement, int nLevel);
 
-	// --- In  : pElement - current element being parsed
+	// --- InÂ  : pElement - current element being parsed
 	// --- Out : strEndTag - will contain the end tag name that was found.
 	// --- Returns : Returns TRUE on success, FALSE otherwise
 	// --- Effect : Parses the endtag ("</...>") for this element 
     virtual BOOL ParseEndTag(COXParserElement *pElement, 
 		COXQuickString& strEndTag);
 
-	// --- In  : szStr - literal identifier of a special character
+	// --- InÂ  : szStr - literal identifier of a special character
 	// --- Out : 
 	// --- Returns : The literal character represented by the token name
 	// --- Effect : Takes an identifier and returns the literal char. eg "gt" returns '>'
@@ -811,7 +811,7 @@ public:
 	//              if ReportError is called from within this function
     virtual LPCTSTR GetLiteralString(LPCTSTR szStr);
 
-	// --- In  : ch - character to check
+	// --- InÂ  : ch - character to check
 	// --- Out : 
 	// --- Returns : Returns a string containing the entity name for this character.
 	// --- Effect : Looks through the m_Entity list for an entity whose literal
@@ -819,7 +819,7 @@ public:
 	//              the lit. repr. must be a single character)
     virtual LPTSTR GetCharEntity(TCHAR ch);
 
-	// --- In  : szStr - pointer to a text string
+	// --- InÂ  : szStr - pointer to a text string
 	// --- Out : 
 	// --- Returns : Returns a COXQuickString object containing the encoded string.
 	// --- Effect : Converts a string containing special chars (eg '<') to their char 
@@ -828,7 +828,7 @@ public:
 	//              if ReportError is called from within this function
     virtual const COXQuickString EncodeText(LPCTSTR szStr);
 
-	// --- In  : hFile - HANDLE of the file to write to
+	// --- InÂ  : hFile - HANDLE of the file to write to
 	//           pElement - element to output
 	// --- Out :
 	// --- Returns : TRUE on success
@@ -836,7 +836,7 @@ public:
     virtual BOOL WriteAttributes(HANDLE hFile, 
 		COXParserElement* pElement);
 
-	// --- In  : hFile - HANDLE of the file to write to
+	// --- InÂ  : hFile - HANDLE of the file to write to
 	//           pObject - comment object to output
 	//           nLevel - level of indentation
 	// --- Out :
@@ -845,7 +845,7 @@ public:
     virtual BOOL WriteCData(HANDLE hFile, COXParserObject* pObject, 
 		int nLevel);
 
-	// --- In  : hFile - HANDLE of the file to write to
+	// --- InÂ  : hFile - HANDLE of the file to write to
 	//           pObject - comment object to output
 	//           nLevel - level of indentation
 	// --- Out :
@@ -854,7 +854,7 @@ public:
     virtual BOOL WriteComment(HANDLE hFile, COXParserObject* pObject, 
 		int nLevel);
 
-	// --- In  : hFile - HANDLE of the file to write to
+	// --- InÂ  : hFile - HANDLE of the file to write to
 	//           pElement - element to output
 	//           nLevel - level of indentation
 	// --- Out :
@@ -863,7 +863,7 @@ public:
     virtual BOOL WriteElement(HANDLE hFile, COXParserElement* pElement, 
 		int nLevel);
 
-	// --- In  : hFile - HANDLE of the file to write to
+	// --- InÂ  : hFile - HANDLE of the file to write to
 	//           pObject - comment object to output
 	//           nLevel - level of indentation
 	// --- Out :
@@ -872,7 +872,7 @@ public:
     virtual BOOL WriteMarkup(HANDLE hFile, COXParserObject* pObject, 
 		int nLevel);
 
-	// --- In  : hFile - HANDLE of the file to write to
+	// --- InÂ  : hFile - HANDLE of the file to write to
 	//           pObject - comment object to output
 	//           nLevel - level of indentation
 	// --- Out :
@@ -881,7 +881,7 @@ public:
     virtual BOOL WriteProcessingInstruction(HANDLE hFile, 
 		COXParserObject* pObject, int nLevel);
 
-	// --- In  : hFile - HANDLE of the file to write to
+	// --- InÂ  : hFile - HANDLE of the file to write to
 	//           pObject - text object to output
 	//           nLevel - level of indentation
 	// --- Out :
@@ -890,7 +890,7 @@ public:
     virtual BOOL WriteText(HANDLE hFile, COXParserObject* pObject, 
 		int nLevel);
 
-	// --- In  : hFile - HANDLE of the file to write to
+	// --- InÂ  : hFile - HANDLE of the file to write to
 	//           pObject - object to output
 	//           nLevel - level of indentation
 	// --- Out :
@@ -902,44 +902,44 @@ public:
 protected:
 	void InsertEntityValue(COXQuickString& str, LPCTSTR lpszEntity);
 
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out :  A COXQuickString object containing the name 
 	// --- Returns : TRUE on success
 	// --- Effect : Retrieves a string delimted by the given quote character
     BOOL GetNameToken(COXQuickString& str);
 
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out :  nNumber - a reference to an int variable to hold the parsed value
 	// --- Returns : TRUE on success
 	// --- Effect : Retrieves a number (optionally prefixed by + or -)
     BOOL GetNumberToken(int& nNumber);
 
-	// --- In  : chQuoteChar - the quote character (" or ') that delimits the string
+	// --- InÂ  : chQuoteChar - the quote character (" or ') that delimits the string
 	// --- Out : A COXQuickString object containing the string 
 	// --- Returns : TRUE on success
 	// --- Effect : Retrieves a string delimted by the given quote character
     BOOL GetStringToken(COXQuickString& str, TCHAR chQuoteChar);
 
-	// --- In  : bWarnOnEOF - if TRUE, a warning will be issued if EOF is encountered.
+	// --- InÂ  : bWarnOnEOF - if TRUE, a warning will be issued if EOF is encountered.
 	// --- Out : token - a COXToken object that will be filled with the next token
 	// --- Returns : Returns TRUE on success, FALSE otherwise
 	// --- Effect : Retrieves the next token in the stream and moves the buffer 
 	//              pointer immediately after token
     BOOL GetToken(COXToken& token, BOOL bWarnOnEOF = FALSE);
 
-	// --- In  : 
+	// --- InÂ  : 
 	// --- Out : pos - Will be set to the current buffer position
 	// --- Returns : 
 	// --- Effect : Saves the current buffer position
     void SaveBufferPos(SAVEPOS& pos);
 
-	// --- In  : pos - a previously saved buffer position structure
+	// --- InÂ  : pos - a previously saved buffer position structure
 	// --- Out : 
 	// --- Returns : 
 	// --- Effect : Restores the previously saved the current buffer position
     void RestoreBufferPos(SAVEPOS& pos);
 
-	// --- In  : nSteps - number of character positions to step the buffer
+	// --- InÂ  : nSteps - number of character positions to step the buffer
 	//           bWarnOnError - if TRUE, then a warning is issued on an error
 	// --- Out :
 	// --- Returns : The next available char in the input stream, or 0 if none
@@ -948,34 +948,34 @@ protected:
 	//              is nSteps after the last character retrieved.
     TCHAR GetNextChar(int nSteps = 1, BOOL bWarnOnError = FALSE);
 
-	// --- In  :
+	// --- InÂ  :
 	// --- Out : 
 	// --- Returns : TRUE if successful, FALSE otherwise
 	// --- Effect : Moves the pointer to the first non-whitspace character in the input
 	//              buffer. The 
     BOOL  RemoveWhiteSpace();
 
-	// --- In  : nSteps - number of character positions to step back the buffer
+	// --- InÂ  : nSteps - number of character positions to step back the buffer
 	// --- Out : 
 	// --- Returns : 
 	// --- Effect : Moves the input pointer to back one character.
     void  UngetChar(int nSteps = 1);
 
-	// --- In  : szFile - name of file to load
+	// --- InÂ  : szFile - name of file to load
 	// --- Out :
 	// --- Returns : a pointer to the buffer containing the file text, or NULL on failure.
 	// --- Effect : Loads the contents of a file to the supplied buffer. 
 	//              The returned buffer MUST be free'd using GlobalFree
     LPTSTR LoadFile(LPCTSTR szFile);
 
-	// --- In  : hFile - HANDLE of the file to write to
+	// --- InÂ  : hFile - HANDLE of the file to write to
 	//           nLevel - level of indentation
 	// --- Out :
 	// --- Returns : TRUE on success
 	// --- Effect : Outputs indents according to the depth of the parse tree being output
     BOOL WriteTabs(HANDLE hFile, int nLevel);
 
-	// --- In  : nErrorCode - not used yet. Will be used for an error code.
+	// --- InÂ  : nErrorCode - not used yet. Will be used for an error code.
 	//           fmt - error message format - used in the same way as a "printf"
 	// --- Out :
 	// --- Returns : Not used yet. In future this value will be used to determine whether
@@ -984,7 +984,7 @@ protected:
 	//              calls the installed error handling function.
     BOOL ReportError(UINT nErrorCode, LPCTSTR fmt, ...);
 
-	// --- In  : nErrorCode - Contains the error code.
+	// --- InÂ  : nErrorCode - Contains the error code.
 	//           szError -  a string descibing the error
 	//           nLine, nColumn - the current line and column number
 	//           dwData - user supplied data provided in the call to SetErrorRptFunction
