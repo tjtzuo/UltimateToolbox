@@ -112,7 +112,7 @@
       <AdditionalDependencies>..\..\..\Lib\libs\jpgd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(Configuration)\$(ProjectName).exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <IgnoreSpecificDefaultLibraries>LIBCD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Debug/ImageViewer.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>

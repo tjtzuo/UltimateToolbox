@@ -103,11 +103,11 @@
       <AdditionalIncludeDirectories>..\..\..\include;..\..\..\source\utsampleabout;..\..\..\lib\jpeg;..\..\..\lib\jpeg\jpegsrc6;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>jpgd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>jpgd.lib</AdditionalDependencies>
       <OutputFile>$(Configuration)\$(ProjectName).exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>..\..\..\lib\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <IgnoreSpecificDefaultLibraries>LIBCD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Debug/JPGtest.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>

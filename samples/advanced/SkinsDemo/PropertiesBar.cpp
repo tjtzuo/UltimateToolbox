@@ -1,4 +1,4 @@
-// PropertiesBar.cpp : implementation file
+ï»¿// PropertiesBar.cpp : implementation file
 //
 
 #include "stdafx.h"
@@ -175,7 +175,7 @@ void CPropertiesBar::InitProperties()
 	// Angle
 	hProperty = m_wndProperties.InsertProperty(
 		_T("Angle"),										// property name
-		_T("0.00 °"),										// initail value
+		_T("0.00 Â°"),										// initail value
 		_T("Demonstrates the use of an angle field."),		// property description
 		_T("Physical Fields"),								// category
 		&m_angleEditor);									// editor window
@@ -191,7 +191,7 @@ void CPropertiesBar::InitProperties()
 	// Temperature
 	hProperty = m_wndProperties.InsertProperty(
 		_T("Temperature"),									// property name
-		_T("0.00 °C"),										// initail value
+		_T("0.00 Â°C"),										// initail value
 		_T("Demonstrates the use of a temparature field."),	// property description
 		_T("Physical Fields"),								// category
 		&m_temperatureEditor);								// editor window
